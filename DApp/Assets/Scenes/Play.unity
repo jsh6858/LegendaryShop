@@ -236,6 +236,26 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114470969720585792, guid: 0303e0ba6e7a87643806d58459658ba8,
+        type: 2}
+      propertyPath: scalingStyle
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114470969720585792, guid: 0303e0ba6e7a87643806d58459658ba8,
+        type: 2}
+      propertyPath: manualWidth
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 114470969720585792, guid: 0303e0ba6e7a87643806d58459658ba8,
+        type: 2}
+      propertyPath: manualHeight
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 114470969720585792, guid: 0303e0ba6e7a87643806d58459658ba8,
+        type: 2}
+      propertyPath: fitWidth
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0303e0ba6e7a87643806d58459658ba8, type: 2}
   m_IsPrefabAsset: 0
