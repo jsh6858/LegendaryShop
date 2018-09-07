@@ -276,7 +276,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 50, z: 0}
+  m_Size: {x: 230, y: 80, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &173826901
 GameObject:
@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 510346890}
   - component: {fileID: 510346889}
   m_Layer: 9
-  m_Name: Button (3)
+  m_Name: Gacha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,7 +722,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1536187275}
+    mMethodName: Push_Gacha
+    mParameters: []
+    oneShot: 0
 --- !u!65 &510346891
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -733,7 +737,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 240, y: 50, z: 0}
+  m_Size: {x: 240, y: 140, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &541100197
 GameObject:
@@ -817,7 +821,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 50, z: 0}
+  m_Size: {x: 90, y: 90, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &557288950
 GameObject:
@@ -1094,7 +1098,7 @@ GameObject:
   - component: {fileID: 771988188}
   - component: {fileID: 771988187}
   m_Layer: 9
-  m_Name: Button (2)
+  m_Name: Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1155,7 +1159,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1536187275}
+    mMethodName: Push_Contract
+    mParameters: []
+    oneShot: 0
 --- !u!65 &771988189
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1166,7 +1174,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 240, y: 50, z: 0}
+  m_Size: {x: 240, y: 140, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1068385852
 GameObject:
@@ -1250,7 +1258,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 50, z: 0}
+  m_Size: {x: 90, y: 90, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1230605332
 GameObject:
@@ -1704,6 +1712,7 @@ GameObject:
   - component: {fileID: 1536187273}
   - component: {fileID: 1536187272}
   - component: {fileID: 1536187271}
+  - component: {fileID: 1536187275}
   m_Layer: 9
   m_Name: FixedScene
   m_TagString: Untagged
@@ -1809,6 +1818,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1536187275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536187270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd70fc8c8d127149b165ec8d85fdd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trBottomButtons:
+  - {fileID: 771988186}
+  - {fileID: 1700627687}
+  - {fileID: 510346888}
 --- !u!1 &1700627686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,7 +1845,7 @@ GameObject:
   - component: {fileID: 1700627689}
   - component: {fileID: 1700627688}
   m_Layer: 9
-  m_Name: Button (1)
+  m_Name: Hunter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1882,7 +1906,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1536187275}
+    mMethodName: Push_Hunter
+    mParameters: []
+    oneShot: 0
 --- !u!65 &1700627690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1893,7 +1921,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 240, y: 50, z: 0}
+  m_Size: {x: 240, y: 140, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1788393075
 GameObject:
