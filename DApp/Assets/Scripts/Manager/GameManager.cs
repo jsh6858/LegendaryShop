@@ -37,11 +37,7 @@ public class GameManager : MonoBehaviour
         _LoadData();
 
         GlobalDdataManager.MyWeaponList = new List<Weapon>();
-        for (int i = 0; i < 55; ++i)
-        {
-            int ran = UnityEngine.Random.Range(0, 87);
-            GlobalDdataManager.MyWeaponList.Add(GlobalDdataManager.WeaponList[ran]);
-        }
+        GlobalDdataManager.MyItemList = new List<Item>();
 
         //_GetPlayerName();
 
@@ -50,13 +46,17 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            client.f1_press();
+        }
         if (Input.GetKeyDown(KeyCode.F2))
         {
             client.SetTileMapState();
         }
         if (Input.GetKeyDown(KeyCode.F3))
         {
-            client.GetTileMapState();
+            client.f3_press();
         }
     }
 
@@ -141,6 +141,10 @@ public class GameManager : MonoBehaviour
             EasyManager.Instance._bChooseWeapon = true;
 
         Show_Popup(Resources.Load("Inventory/Inventory_Weapon") as GameObject);
+    }
+    public void Push_ShowMakeWeapon()
+    {
+        Show_Popup(Resources.Load("Gacha/Gacha_EffectPage") as GameObject);
     }
 
     public void ActivatePanelCollider(bool b)
