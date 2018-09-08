@@ -1,21 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LegendFramework;
 
 public class Item_Weapon : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    Weapon myWeapon;
+    GameObject detailView;
 
-    public void Push_ItemWeapon()
+    public void Push_ItemWeapon(Weapon w, GameObject view)
     {
-        Debug.Log("Push_ItemWeapon");
+        myWeapon = w;
+        detailView = view;
+    }
+
+    public void Click()
+    {
+        detailView.transform.Find("Label_WeaponName").GetComponent<UILabel>().text = myWeapon.Name;
     }
 }
