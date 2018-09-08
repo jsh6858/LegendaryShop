@@ -7,6 +7,7 @@ public class Tab2Manager : MonoBehaviour {
     public bool isActive = false;
     public GameObject myPage;
 
+    GameObject _objHunter;
     public ScreenFader fader;
 
     void Awake()
@@ -31,6 +32,13 @@ public class Tab2Manager : MonoBehaviour {
     {
         isActive = true;
         myPage.SetActive(true);
+
+        if (null == _objHunter)
+        {
+            GameObject obj = Resources.Load("HunterList/HunterList") as GameObject;
+
+            _objHunter = GameObject.Instantiate(obj, Vector3.zero, Quaternion.identity, myPage.transform);
+        }
     }
 
     public void DropManager()

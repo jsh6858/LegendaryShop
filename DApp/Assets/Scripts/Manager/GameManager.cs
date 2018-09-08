@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
 
         _GetAuthKeys();
         _GetPlayerName();
+
+        EasyManager.Instance.Initialize();
     }
 
     void Update()

@@ -10,7 +10,7 @@ public class Contract_Page : MonoBehaviour {
         get
         {
             if (null == GameManager)
-                GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+                GameManager = EasyManager.Instance.GetObj("GameManager").GetComponent<GameManager>();
 
             return GameManager;
         }
