@@ -51,6 +51,10 @@ public class GameManager : MonoBehaviour
         {
             client.GetTileMapState();
         }
+        if (Input.GetKeyDown(KeyCode.F4))
+        {
+            Push_ShowWeapon();
+        }
     }
 
     private void _ConnectToLoomNetwork()
@@ -104,13 +108,6 @@ public class GameManager : MonoBehaviour
 
     public void Show_Popup(GameObject obj)
     {
-        if(_trPopup.childCount != 0)
-        {
-            Transform child = _trPopup.GetChild(0);
-
-            Destroy(child.gameObject);
-        }
-
         Instantiate(obj, Vector3.zero, Quaternion.identity, _trPopup);
 
         ActivatePanelCollider(false);
@@ -121,7 +118,7 @@ public class GameManager : MonoBehaviour
         if (_trPopup.childCount == 0)
             return;
         
-         Transform child = _trPopup.GetChild(0);
+         Transform child = _trPopup.GetChild(_trPopup.childCount - 1); //
 
          Destroy(child.gameObject);
 
