@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LegendFramework;
 
 public class EasyManager {
 
@@ -8,7 +9,8 @@ public class EasyManager {
 
     public Contract_Info _curContract;
 
-    public bool _bChooseWeapon = false;
+    public bool _bChooseWeapon = true;
+    Weapon _selectedWeapon;
 
     private EasyManager()
     {
@@ -47,6 +49,13 @@ public class EasyManager {
             _dicObj[str] = GameObject.Find(str);
 
         return _dicObj[str];
+    }
+
+    public void Weapon_Select(Weapon w)
+    {
+        _selectedWeapon = w;
+        
+        // 처리
     }
 
 }
