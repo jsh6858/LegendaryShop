@@ -765,6 +765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   myPage: {fileID: 1829534542}
+  _objContract: {fileID: 0}
 --- !u!1 &557288950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,7 +1238,7 @@ GameObject:
   - component: {fileID: 1068385855}
   - component: {fileID: 1068385854}
   m_Layer: 9
-  m_Name: Button
+  m_Name: Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1299,7 +1300,9 @@ MonoBehaviour:
   onClick:
   - mTarget: {fileID: 417280422}
     mMethodName: Push_ShowWeapon
-    mParameters: []
+    mParameters:
+    - obj: {fileID: 1068385852}
+      field: 
     oneShot: 0
 --- !u!65 &1068385856
 BoxCollider:
