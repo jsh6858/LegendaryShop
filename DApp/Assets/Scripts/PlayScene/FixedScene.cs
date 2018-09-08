@@ -6,6 +6,10 @@ public class FixedScene : MonoBehaviour {
 
     public Transform[] _trBottomButtons;
 
+    public GameObject[] _objPages;
+
+    public GameObject[] _objPanels;
+
     public void Push_Contract()
     {
         Select_Menu(0);
@@ -25,10 +29,32 @@ public class FixedScene : MonoBehaviour {
     {
         for(int i=0; i< _trBottomButtons.Length;++i)
         {
-            _trBottomButtons[i].localPosition = new Vector2(_trBottomButtons[i].localPosition.x, -630f);
+            if(i == iMenu)
+                _trBottomButtons[i].localPosition = new Vector2(_trBottomButtons[i].localPosition.x, -570f);
+            else
+                _trBottomButtons[i].localPosition = new Vector2(_trBottomButtons[i].localPosition.x, -630f);
         }
-        _trBottomButtons[iMenu].localPosition = new Vector2(_trBottomButtons[iMenu].localPosition.x, -570f);
+        
+        for (int i = 0; i < _objPages.Length; ++i)
+        {
+            if (i == iMenu)
+                _objPages[i].SetActive(true);
+            else
+                _objPages[i].SetActive(false);
+        }
+    }
 
+    public void Set_FixedPanel(bool b)
+    {
+        for (int i = 0; i < _objPanels.Length; ++i)
+            _objPanels[i].SetActive(b);
+    }
 
+    public void CloseAllPages()
+    {
+        for (int i = 0; i < _objPages.Length; ++i)
+        {
+            _objPages[i].SetActive(false);
+        }
     }
 }
