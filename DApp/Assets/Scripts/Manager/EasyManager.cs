@@ -37,7 +37,7 @@ public class EasyManager {
             return;
         _bInitialize = true;
 
-        string[] strObj = new string[] { "GameManager", };
+        string[] strObj = new string[] { "GameManager", "UI" };
 
         for(int i=0; i< strObj.Length; ++i)
             _dicObj.Add(strObj[i], GameObject.Find(strObj[i]));
@@ -54,8 +54,9 @@ public class EasyManager {
     public void Weapon_Select(Weapon w)
     {
         _selectedWeapon = w;
-        
+
         // 처리
+        _dicObj["UI"].transform.Find("Camera/PopUp/QuestManager(Clone)").GetComponent<QuestManager>().Give_Weapon(w);
     }
 
 }

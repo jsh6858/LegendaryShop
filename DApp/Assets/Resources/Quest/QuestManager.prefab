@@ -3902,7 +3902,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1586622285489392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -255, y: 0, z: 0}
+  m_LocalPosition: {x: -255, y: -9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4544498346109504}
@@ -4100,7 +4100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292237350664272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: -2, z: 0}
   m_LocalScale: {x: 0.999, y: 0.999, z: 0.999}
   m_Children: []
   m_Father: {fileID: 4544498346109504}
@@ -5883,7 +5883,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1667273967934752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 156.1, y: 0, z: 0}
+  m_LocalPosition: {x: 157.1, y: 0, z: 0}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
   m_Children: []
   m_Father: {fileID: 4708101611696510}
@@ -7173,6 +7173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f8efdf4f66d954d9e0d797a02b55f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bSelected: 0
   _ItemName: {fileID: 114041771536269646}
   _Percentage: {fileID: 114698738807681996}
   _UnlockCondition: {fileID: 114831823665716204}
@@ -7498,7 +7499,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Select_Item
+    mParameters:
+    - obj: {fileID: 1081359106226164}
+      field: 
+    oneShot: 0
 --- !u!114 &114140659948519210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7964,7 +7971,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Select_Item
+    mParameters:
+    - obj: {fileID: 1661581309006364}
+      field: 
+    oneShot: 0
 --- !u!114 &114176314277449042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8165,7 +8178,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Select_Item
+    mParameters:
+    - obj: {fileID: 1882589554239872}
+      field: 
+    oneShot: 0
 --- !u!114 &114187139032522070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8568,7 +8587,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Select_Item
+    mParameters:
+    - obj: {fileID: 1843032125508052}
+      field: 
+    oneShot: 0
 --- !u!114 &114227542173329684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9508,6 +9533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f8efdf4f66d954d9e0d797a02b55f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bSelected: 0
   _ItemName: {fileID: 114892808339595728}
   _Percentage: {fileID: 114031501570551174}
   _UnlockCondition: {fileID: 114854515233594608}
@@ -10827,6 +10853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f8efdf4f66d954d9e0d797a02b55f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bSelected: 0
   _ItemName: {fileID: 114181887131714388}
   _Percentage: {fileID: 114607536606535576}
   _UnlockCondition: {fileID: 114569317602981372}
@@ -11204,6 +11231,7 @@ MonoBehaviour:
   _WpPower: {fileID: 114443634455048182}
   _SprWeapon: {fileID: 114232780886558938}
   _SprBestChoice: {fileID: 114176314277449042}
+  _bActivate: 0
 --- !u!114 &114525955382746458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11228,7 +11256,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Select_Item
+    mParameters:
+    - obj: {fileID: 1324999234905596}
+      field: 
+    oneShot: 0
 --- !u!114 &114530454883393048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11497,7 +11531,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Push_AddWeapon
+    mParameters:
+    - obj: {fileID: 1676089741306746}
+      field: 
+    oneShot: 0
 --- !u!114 &114544513046121520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12042,6 +12082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f8efdf4f66d954d9e0d797a02b55f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bSelected: 0
   _ItemName: {fileID: 114554103842378996}
   _Percentage: {fileID: 114074689116289762}
   _UnlockCondition: {fileID: 114022939411437780}
@@ -12069,7 +12110,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Select_Item
+    mParameters:
+    - obj: {fileID: 1244725346566342}
+      field: 
+    oneShot: 0
 --- !u!114 &114592560856745096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12081,6 +12128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f8efdf4f66d954d9e0d797a02b55f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bSelected: 0
   _ItemName: {fileID: 114466005081192278}
   _Percentage: {fileID: 114450825035219370}
   _UnlockCondition: {fileID: 114951096295046600}
@@ -13546,7 +13594,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Push_AddWeapon
+    mParameters:
+    - obj: {fileID: 1356256882391102}
+      field: 
+    oneShot: 0
 --- !u!114 &114744829123410662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13911,6 +13965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f8efdf4f66d954d9e0d797a02b55f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bSelected: 0
   _ItemName: {fileID: 114698199690438590}
   _Percentage: {fileID: 114744829123410662}
   _UnlockCondition: {fileID: 114019232164400400}
@@ -14155,6 +14210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f8efdf4f66d954d9e0d797a02b55f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bSelected: 0
   _ItemName: {fileID: 114793108629678730}
   _Percentage: {fileID: 114467065382104096}
   _UnlockCondition: {fileID: 114021499814902672}
@@ -14600,6 +14656,7 @@ MonoBehaviour:
   _WpPower: {fileID: 114675048225164230}
   _SprWeapon: {fileID: 114969773382392426}
   _SprBestChoice: {fileID: 114544513046121520}
+  _bActivate: 0
 --- !u!114 &114846638516700164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14624,7 +14681,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Push_AddWeapon
+    mParameters:
+    - obj: {fileID: 1829350148411960}
+      field: 
+    oneShot: 0
 --- !u!114 &114854515233594608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14717,7 +14780,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Select_Item
+    mParameters:
+    - obj: {fileID: 1306086545923902}
+      field: 
+    oneShot: 0
 --- !u!114 &114861224478254704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15000,6 +15069,7 @@ MonoBehaviour:
   _WpPower: {fileID: 114912026935882418}
   _SprWeapon: {fileID: 114492264306354898}
   _SprBestChoice: {fileID: 114840043090330926}
+  _bActivate: 0
 --- !u!114 &114872283776250254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15216,28 +15286,28 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 140
+  mWidth: 174
   mHeight: 50
   mDepth: 50
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.8
+  aspectRatio: 3.48
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: 99999
+  mText: 12345
   mFontSize: 50
   mFontStyle: 0
-  mAlignment: 0
+  mAlignment: 1
   mEncoding: 1
   mMaxLineCount: 0
   mEffectStyle: 0
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 2
+  mOverflow: 1
   mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 0.7, g: 0.7, b: 0.7, a: 1}
@@ -15605,7 +15675,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Select_Item
+    mParameters:
+    - obj: {fileID: 1041744537981560}
+      field: 
+    oneShot: 0
 --- !u!114 &114961274533249772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15833,6 +15909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f8efdf4f66d954d9e0d797a02b55f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bSelected: 0
   _ItemName: {fileID: 114843595528833998}
   _Percentage: {fileID: 114221024426695160}
   _UnlockCondition: {fileID: 114539329827305206}
@@ -15974,19 +16051,19 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 150
-  mHeight: 40
+  mWidth: 200
+  mHeight: 58
   mDepth: 50
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.75
+  aspectRatio: 3.4482758
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: Party
-  mFontSize: 40
+  mFontSize: 44
   mFontStyle: 0
   mAlignment: 2
   mEncoding: 1

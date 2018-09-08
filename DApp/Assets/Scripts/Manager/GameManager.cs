@@ -58,10 +58,6 @@ public class GameManager : MonoBehaviour
         {
             client.GetTileMapState();
         }
-        if (Input.GetKeyDown(KeyCode.F4))
-        {
-            Push_ShowWeapon();
-        }
     }
 
     private void _ConnectToLoomNetwork()
@@ -137,8 +133,13 @@ public class GameManager : MonoBehaviour
         SceneChanger.Instance.PlayToTitle();
     }
 
-    public void Push_ShowWeapon()
+    public void Push_ShowWeapon(GameObject obj)
     {
+        if (obj.name == "Display")
+            EasyManager.Instance._bChooseWeapon = false;
+        else
+            EasyManager.Instance._bChooseWeapon = true;
+
         Show_Popup(Resources.Load("Inventory/Inventory_Weapon") as GameObject);
     }
 

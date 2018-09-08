@@ -20,14 +20,14 @@ public class HunterAndWeapon : MonoBehaviour {
     public UISprite _SprWeapon;
     public UISprite _SprBestChoice;
 
-    GameObject objSelect;
-    GameObject _objSelect
+    GameObject _objSelect;
+    GameObject objSelect
     {
         get
         {
-            if (null == objSelect)
-                objSelect = transform.Find("Weapon/Select").gameObject;
-            return objSelect;
+            if (null == _objSelect)
+                _objSelect = transform.Find("Weapon/Select").gameObject;
+            return _objSelect;
         }
     }
 
@@ -88,5 +88,6 @@ public class HunterAndWeapon : MonoBehaviour {
             objSelect.SetActive(false);
             objUnselect.SetActive(true);
         }
+        _bActivate = b;
     }
 }

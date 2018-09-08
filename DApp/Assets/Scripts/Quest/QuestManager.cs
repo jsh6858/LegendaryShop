@@ -8,6 +8,8 @@ public class QuestManager : MonoBehaviour {
     readonly int[] POWER_NEED = new int[] { 1000, 3000, 5000, 7000, 9000 };
     readonly int[] OPEN_ITEM = new int[] { 1, 1, 1, 2, 1 };
 
+    int _iCurSelectedHunter;
+
     // Title
     public UILabel _Title;
 
@@ -57,7 +59,6 @@ public class QuestManager : MonoBehaviour {
         Monster monster = GlobalDdataManager.MonsterList[quest.MyMonster % GlobalDdataManager.MonsterList.Count];
         _MonsterName.text = monster.MonsterName;
         _MonsterPower.text = monster.MonsterPower.ToString();
-        _SuccessRate.text = string.Format("{0:#.##}", Random.Range(60f, 99f));
         _Time.text = quest.PeriodTime.ToString();
         //_SprMon.spriteName = monster.MonsterSdId.ToString();
 
@@ -65,9 +66,11 @@ public class QuestManager : MonoBehaviour {
         int[] unique = quest.Random_Trophy;
 
         _itemList[0].Set_ItemInfo(GlobalDdataManager.ItemList[normal[0]].Name);
+        _itemList[0].Select_Item(true);
         _itemList[1].Set_ItemInfo(GlobalDdataManager.ItemList[normal[1]].Name);
+        _itemList[1].Select_Item(true);
 
-        for(int i=2; i<8; ++i)
+        for (int i=2; i<8; ++i)
             _itemList[i].Set_ItemInfo(GlobalDdataManager.ItemList[unique[i-2]].Name);
 
         int[] hunter = GlobalDdataManager.PartyList[quest.MyParty].PartyMembers;
@@ -78,11 +81,6 @@ public class QuestManager : MonoBehaviour {
         Party party = GlobalDdataManager.PartyList[quest.MyParty];
         _PartyName.text = party.PartyName;
         _PartyPower.text = party.PartyPower.ToString();
-        /*_PartyPlus.text = ??
-        public UILabel _PowerNeed;
-        public UILabel _CheckNum;
-        public UISprite _SrpCheck;
-        */
 
         Calculate_AllPower();
     }
@@ -135,6 +133,10 @@ public class QuestManager : MonoBehaviour {
             else
                 _itemList[i].Activate(false);
         }
+
+        float fMonPower = float.Parse(_MonsterPower.text);
+        float fPercentage = Mathf.Min(100f, 100f * iResult / fMonPower);
+        _SuccessRate.text = string.Format("{0:#.##}", fPercentage);
     }
 
     public void Push_Admission()
@@ -155,6 +157,56 @@ public class QuestManager : MonoBehaviour {
     {
         //LegendFramework.Quest quest = new LegendFramework.Quest(0, "title", 10, 1, 1, new int[] { 1, 1 }, new int[] { 2, 2 });
 
+        bool[] bItem = new bool[6];
+
+        for(int i=2; i<_itemList.Length; ++i)
+        {
+            if (_itemList[i]._bSelected)
+            {
+                Debug.Log("아이템 번호(추가): " + i + " 선택되어 QuestProgressList에 들어감.");
+                bItem[i -2] = true;
+            }
+            else
+                bItem[i - 2] = false;
+        }
+        EasyManager.Instance._curContract._myQuest.Trophy_Checked = bItem;
+
         LegendFramework.GlobalDdataManager.QuestProgressList.Add(EasyManager.Instance._curContract._myQuest);
+    }
+
+    public void Push_AddWeapon(GameObject obj)
+    {
+        int iSelect = 0;
+        for(int i=0; i<_hunterAndWeaponList.Length; ++i)
+        {
+            if(_hunterAndWeaponList[i].name == obj.name)
+            {
+                iSelect = i;
+                break;
+            }
+        }
+        _iCurSelectedHunter = iSelect;
+
+        _GameManager.Push_ShowWeapon(obj);
+    }
+
+    public void Select_Item(GameObject obj)
+    {
+        for(int i=0; i<_itemList.Length;++i)
+        {
+            if(_itemList[i].name == obj.name)
+            {
+                _itemList[i].Select_Item();
+                break;
+            }
+        }
+    }
+
+    public void Give_Weapon(Weapon weapon)
+    {
+        _hunterAndWeaponList[_iCurSelectedHunter].Set_Weapon(weapon);
+        _hunterAndWeaponList[_iCurSelectedHunter].Activate(true);
+
+        Calculate_AllPower();
     }
 }
