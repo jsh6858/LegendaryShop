@@ -22,7 +22,6 @@ namespace LegendFramework
 
         static private List<Hunter> __hunterList;
         static public List<Hunter> HunterList;
-
         static private List<Weapon> __weaponList;
         static public List<Weapon> WeaponList
         {
@@ -36,7 +35,6 @@ namespace LegendFramework
                 __weaponList = value;
             }
         }
-
         static private List<Party> __partyList;
         static public List<Party> PartyList
         {
@@ -50,7 +48,6 @@ namespace LegendFramework
                 __partyList = value;
             }
         }
-
         static private List<Quest> __questList;
         static public List<Quest> QuestList
         {
@@ -64,40 +61,6 @@ namespace LegendFramework
                 __questList = value;
             }
         }
-
-        static private List<Quest> __questReadyList;
-        static public List<Quest> QuestReadyList
-        {
-            get
-            {
-                if (__questReadyList == null)
-                    __questReadyList = new List<Quest>();
-                return __questReadyList;
-            }
-
-            set
-            {
-                __questReadyList = value;
-            }
-        }
-
-        static private List<Quest> __questProgressList;
-        static public List<Quest> QuestProgressList
-        {
-            get
-            {
-                if(__questProgressList == null)
-                    __questProgressList = new List<Quest>();
-
-                return __questProgressList;
-            }
-
-            set
-            {
-                __questProgressList = value;
-            }
-        }
-
         static private List<Item> __itemList;
         static public List<Item> ItemList
         {
@@ -123,6 +86,70 @@ namespace LegendFramework
             set
             {
                 __monsterList = value;
+            }
+        }
+
+        static private List<Quest> __questReadyList;
+        static public List<Quest> QuestReadyList
+        {
+            get
+            {
+                if (__questReadyList == null)
+                    __questReadyList = new List<Quest>();
+                return __questReadyList;
+            }
+
+            set
+            {
+                __questReadyList = value;
+            }
+        }
+        static private List<Quest> __questProgressList;
+        static public List<Quest> QuestProgressList
+        {
+            get
+            {
+                if(__questProgressList == null)
+                    __questProgressList = new List<Quest>();
+
+                return __questProgressList;
+            }
+
+            set
+            {
+                __questProgressList = value;
+            }
+        }
+        static private List<Weapon> __myWeaponList;
+        static public List<Weapon> MyWeaponList
+        {
+            get
+            {
+                if (__myWeaponList == null)
+                    __myWeaponList = new List<Weapon>();
+
+                return __myWeaponList;
+            }
+
+            set
+            {
+                __myWeaponList = value;
+            }
+        }
+        static private List<Item> __myItemList;
+        static public List<Item> MyItemList
+        {
+            get
+            {
+                if (__myItemList == null)
+                    __myItemList = new List<Item>();
+
+                return __myItemList;
+            }
+
+            set
+            {
+                __myItemList = value;
             }
         }
     }

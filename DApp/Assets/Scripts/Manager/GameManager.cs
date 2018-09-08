@@ -36,8 +36,6 @@ public class GameManager : MonoBehaviour
 
         _LoadData();
 
-        //GlobalDdataManager.test();
-
         //_GetPlayerName();
 
         EasyManager.Instance.Initialize();
