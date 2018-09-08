@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     public Transform _trPopup;
 
+    public BoxCollider[] _boxColliders;
+
     void Awake()
     {
         tab1Manager = GameObject.Find("Tab1Manager").GetComponent<Tab1Manager>();
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
         bottomBTNs[1] = GameObject.Find("HunterList").transform;
         bottomBTNs[2] = GameObject.Find("GachaList").transform;
 
-        LegendaryClient.SignIn();
+        //LegendaryClient.SignIn();
         _GetPlayerName();
 
         EasyManager.Instance.Initialize();
@@ -98,5 +100,16 @@ public class GameManager : MonoBehaviour
     public void Push_PlayToTitle()
     {
         SceneChanger.Instance.PlayToTitle();
+    }
+
+    public void Push_ShowWeapon()
+    {
+        Show_Popup(Resources.Load("Inventory/Inventory_Weapon") as GameObject);
+    }
+
+    public void ActivatePanelCollider(bool b)
+    {
+        for (int i = 0; i < _boxColliders.Length; ++i)
+            _boxColliders[i].enabled = b;
     }
 }
