@@ -110,13 +110,13 @@ namespace LegendFramework
 
     public class Hunter
     {
-        int No;
-        string Name;
-        string ThumbImageId;
-        string SDImageId;
-        int Power;
-        WEAPON_TYPE BestMastery;
-        int[] Mastery;
+        public int No;
+        public string Name;
+        public string ThumbImageId;
+        public string SDImageId;
+        public int Power;
+        public WEAPON_TYPE BestMastery;
+        public int[] Mastery;
 
         public Hunter(int _no, string _name, string _thumb, string _sd, int _power, WEAPON_TYPE _bestMastery, int[] _mastery)
         {
@@ -132,16 +132,16 @@ namespace LegendFramework
 
     public class Weapon
     {
-        int No;
-        string Name;
-        string ThumbImageId;
-        int Power = 0;
-        WEAPON_TYPE Type;
-        WEAPON_GRADE Grade;
-        WEAPON_STATE State;
-        string Property;
-        string Special_Ability_1;
-        string Special_Ability_2;
+        public int No;
+        public string Name;
+        public string ThumbImageId;
+        public int Power = 0;
+        public WEAPON_TYPE Type;
+        public WEAPON_GRADE Grade;
+        public WEAPON_STATE State;
+        public string Property;
+        public string Special_Ability_1;
+        public string Special_Ability_2;
         
         public Weapon(int _no, string _name, string _thumb, int _power
             , WEAPON_TYPE _type, WEAPON_GRADE _grade
@@ -162,11 +162,11 @@ namespace LegendFramework
 
     public class Party
     {
-        int No;
-        string PartyName;
-        int PartyPower;
-        int[] PartyMembers;
-        int[] Equips;
+        public int No;
+        public string PartyName;
+        public int PartyPower;
+        public int[] PartyMembers;
+        public int[] Equips;
 
         public Party(int _no, string _name, int _power, int[] _members, int[] _equips)
         {
@@ -184,11 +184,11 @@ namespace LegendFramework
 
     public class Monster
     {
-        int No;
-        string MonsterName;
-        string MonsterThumbImageId;
-        string MonsterSdId;
-        int MonsterPower;
+        public int No;
+        public string MonsterName;
+        public string MonsterThumbImageId;
+        public string MonsterSdId;
+        public int MonsterPower;
 
         public Monster(int _no, string _name, string _thumb, string _sd, int _power)
         {
@@ -202,18 +202,18 @@ namespace LegendFramework
 
     public class Quest
     {
-        int No;
-        string Title;
-        int PeriodTime;
-        
-        int MyParty;
-        int MyMonster;
+        public int No;
+        public string Title;
+        public int PeriodTime;
 
-        int[] Normal_Trophy;    //2, random
-        int[] Random_Trophy;    //6, random
-        int Trophy_Count_Possible;
-        int Trophy_Count_Selected;
-        bool[] Trophy_Checked;
+        public int MyParty;
+        public int MyMonster;
+
+        public int[] Normal_Trophy;    //2, random
+        public int[] Random_Trophy;    //6, random
+        public int Trophy_Count_Possible;
+        public int Trophy_Count_Selected;
+        public bool[] Trophy_Checked;
         
         public Quest(int _no, string _title, int _periodTime, int _party, int _monster
             , int[] _normalTrophy, int[] _randomTrophy)
@@ -260,12 +260,12 @@ namespace LegendFramework
 
     public class Item
     {
-        int No;
-        string Name;
-        string ThumbImageId;
-        ITEM_TYPE Type;
-        string Property;
-        string IconImageId;
+        public int No;
+        public string Name;
+        public string ThumbImageId;
+        public ITEM_TYPE Type;
+        public string Property;
+        public string IconImageId;
         
         public Item(int _no, string _name, string _thumb, ITEM_TYPE _type, string _property, string _icon)
         {
