@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
         _LoadData();
 
-        GlobalDdataManager.test();
+        //GlobalDdataManager.test();
 
         //_GetPlayerName();
 
@@ -114,6 +114,8 @@ public class GameManager : MonoBehaviour
         }
 
         Instantiate(obj, Vector3.zero, Quaternion.identity, _trPopup);
+
+        ActivatePanelCollider(false);
     }
 
     public void Close_PopUp()
@@ -124,6 +126,8 @@ public class GameManager : MonoBehaviour
          Transform child = _trPopup.GetChild(0);
 
          Destroy(child.gameObject);
+
+        ActivatePanelCollider(true);
     }
 
     public void Push_PlayToTitle()
@@ -198,7 +202,7 @@ public class GameManager : MonoBehaviour
 
     private void _LoadData()
     {
-        string path = "D:\\";
+        string path = "Assets/Resources/Data/";
 
         GlobalDdataManager.HunterList = new List<Hunter>();
         GlobalDdataManager.WeaponList = new List<Weapon>();
@@ -309,3 +313,5 @@ public class GameManager : MonoBehaviour
 
     }
 }
+
+

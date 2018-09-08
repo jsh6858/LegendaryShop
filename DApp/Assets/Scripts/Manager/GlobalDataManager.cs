@@ -70,6 +70,8 @@ namespace LegendFramework
         {
             get
             {
+                if (__questReadyList == null)
+                    __questReadyList = new List<Quest>();
                 return __questReadyList;
             }
 
@@ -84,6 +86,9 @@ namespace LegendFramework
         {
             get
             {
+                if(__questProgressList == null)
+                    __questProgressList = new List<Quest>();
+
                 return __questProgressList;
             }
 

@@ -6,6 +6,8 @@ public class EasyManager {
 
     bool _bInitialize = false;
 
+    public Contract_Info _curContract;
+
     private EasyManager()
     {
 

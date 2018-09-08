@@ -2512,6 +2512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4301934106307748}
+  - component: {fileID: 114889201440517954}
   m_Layer: 9
   m_Name: Party_Info
   m_TagString: Untagged
@@ -3377,7 +3378,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1223530427710904}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9697,7 +9698,7 @@ MonoBehaviour:
   pixelSnap: 0
   onClick:
   - mTarget: {fileID: 114872283776250254}
-    mMethodName: Close_Detail
+    mMethodName: Push_Admission
     mParameters: []
     oneShot: 0
 --- !u!114 &114357398205813264
@@ -14844,21 +14845,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de551abf1bdbfd408f5ae7a68ee3a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Title: {fileID: 0}
-  _MonsterName: {fileID: 0}
-  _MonsterPower: {fileID: 0}
-  _SuccessRate: {fileID: 0}
-  _Time: {fileID: 0}
-  _SprMon: {fileID: 0}
-  _PartyName: {fileID: 0}
-  _PartyPower: {fileID: 0}
-  _PartyPlus: {fileID: 0}
-  _PowerNeed: {fileID: 0}
-  _CheckNum: {fileID: 0}
-  _SrpCheck: {fileID: 0}
-  _SignText: {fileID: 0}
-  _SprSign: {fileID: 0}
-  _SignDate: {fileID: 0}
+  _Title: {fileID: 114234621876232450}
+  _MonsterName: {fileID: 114819201904896408}
+  _MonsterPower: {fileID: 114372391136407440}
+  _SuccessRate: {fileID: 114943534762819910}
+  _Time: {fileID: 114435273751491478}
+  _SprMon: {fileID: 114947903704970896}
+  _itemList:
+  - {fileID: 114592560856745096}
+  - {fileID: 114970595505910236}
+  - {fileID: 114074628847046196}
+  - {fileID: 114803675253280934}
+  - {fileID: 114362605455143950}
+  - {fileID: 114582534071109046}
+  - {fileID: 114478473062450110}
+  - {fileID: 114782188043817062}
+  _PartyName: {fileID: 114999087990589584}
+  _PartyPower: {fileID: 114928585929813372}
+  _PartyPlus: {fileID: 114949306226439556}
+  _PowerNeed: {fileID: 114653425349194460}
+  _CheckNum: {fileID: 114496036673321094}
+  _SrpCheck: {fileID: 114027924954070530}
+  _hunterAndWeaponList:
+  - {fileID: 114844455271773770}
+  - {fileID: 114753360158398120}
+  - {fileID: 114460069046970458}
+  _SignText: {fileID: 114028861141717926}
+  _SprSign: {fileID: 114577492744196564}
+  _SignDate: {fileID: 114082756902145238}
+--- !u!114 &114889201440517954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729235327143982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57dada51fc0adb47ad7673b95c21603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114892808339595728
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour {
-
+    
     // Title
     public UILabel _Title;
 
@@ -12,10 +12,10 @@ public class QuestManager : MonoBehaviour {
     public UILabel _MonsterPower;
     public UILabel _SuccessRate;
     public UILabel _Time;
-    public Sprite _SprMon;
+    public UISprite _SprMon;
 
     // Item Info
-    Item_List[] _itemList = new Item_List[8];
+    public Item_List[] _itemList = new Item_List[8];
 
     // Party_Info
     public UILabel _PartyName;
@@ -24,13 +24,13 @@ public class QuestManager : MonoBehaviour {
     public UILabel _PartyPlus;
     public UILabel _PowerNeed;
     public UILabel _CheckNum;
-    public Sprite _SrpCheck;
+    public UISprite _SrpCheck;
 
-    HunterAndWeapon[] _hunterAndWeaponList = new HunterAndWeapon[8];
+    public HunterAndWeapon[] _hunterAndWeaponList = new HunterAndWeapon[3];
 
     // Bottom
     public UILabel _SignText;
-    public Sprite _SprSign;
+    public UISprite _SprSign;
     public UILabel _SignDate;
 
     private GameManager GameManager;
@@ -44,9 +44,34 @@ public class QuestManager : MonoBehaviour {
             return GameManager;
         }
     }
+
+    private void OnEnable()
+    {
+        LegendFramework.Quest quest = EasyManager.Instance._curContract._myQuest;
+
+        _Title.text = quest.Title;
+
+       // _MonsterName.text 
+    }
+
+    public void Push_Admission()
+    {
+        EasyManager.Instance._curContract.Activate(false);
+
+        Add_QuestList();
+
+        Close_Detail(); 
+    }
     
     public void Close_Detail()
     {
         _GameManager.Close_PopUp();
+    }
+
+    void Add_QuestList()
+    {
+        //LegendFramework.Quest quest = new LegendFramework.Quest(0, "title", 10, 1, 1, new int[] { 1, 1 }, new int[] { 2, 2 });
+
+        LegendFramework.GlobalDdataManager.QuestProgressList.Add(EasyManager.Instance._curContract._myQuest);
     }
 }

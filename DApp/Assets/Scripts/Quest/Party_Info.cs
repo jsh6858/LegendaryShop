@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HunterAndWeapon : MonoBehaviour {
+public class Party_Info : MonoBehaviour {
 
-	// Hunter
+   
 }
