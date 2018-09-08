@@ -8,6 +8,8 @@ public class EasyManager {
 
     public Contract_Info _curContract;
 
+    public bool _bChooseWeapon = false;
+
     private EasyManager()
     {
 
