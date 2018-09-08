@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LegendFramework;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
         bottomBTNs[1] = GameObject.Find("HunterList").transform;
         bottomBTNs[2] = GameObject.Find("GachaList").transform;
 
-        _GetAuthKeys();
+        LegendaryClient.SignIn();
         _GetPlayerName();
 
         EasyManager.Instance.Initialize();
@@ -32,13 +33,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
-    }
-
-    private void _GetAuthKeys()
-    {
-        // Private Key, Public Key가 저장되어 있지 않을 경우 생성
-        // 저장되어 있을 경우 로드하여 서버에 접속
-        // (PlayerPrefs)
     }
 
     private void _GetPlayerName()

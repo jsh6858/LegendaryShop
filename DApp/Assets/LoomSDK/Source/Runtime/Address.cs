@@ -8,6 +8,7 @@ namespace Loom.Client
     [JsonConverter(typeof(AddressJsonConverter))]
     public struct Address : IEquatable<Address>
     {
+        //public const string kDefaultChainId = "default";//"legendary-rental-shop";
         public const string kDefaultChainId = "legendary-rental-shop";
         private static readonly AddressUtil addressUtil = new AddressUtil();
 

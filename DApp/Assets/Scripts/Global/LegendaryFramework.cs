@@ -8,7 +8,7 @@ namespace LegendFramework
     {
         public static void Make_Hunter()
         {
-            Hunter hunter = new Hunter("Name", "Hunter1Image", "sd1Image", 50, WEAPON_TYPE.SWORD);
+
         }
     }
 }
