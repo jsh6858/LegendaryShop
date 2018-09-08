@@ -23,8 +23,6 @@ public class GameManager : MonoBehaviour
 
         _GetAuthKeys();
         _GetPlayerName();
-
-        CallTab1Manager();
     }
 
     void Update()

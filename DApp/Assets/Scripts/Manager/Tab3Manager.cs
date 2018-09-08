@@ -10,6 +10,7 @@ public class Tab3Manager : MonoBehaviour {
     void Awake()
     {
         myPage = GameObject.Find("Tab3Panel");
+        myPage.SetActive(false);
     }
 
     void Update()

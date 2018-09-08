@@ -10,6 +10,7 @@ public class Tab2Manager : MonoBehaviour {
     void Awake()
     {
         myPage = GameObject.Find("Tab2Panel");
+        myPage.SetActive(false);
     }
 
     void Update()
