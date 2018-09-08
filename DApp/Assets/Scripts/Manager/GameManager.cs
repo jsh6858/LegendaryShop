@@ -88,4 +88,15 @@ public class GameManager : MonoBehaviour
 
         Instantiate(obj, Vector3.zero, Quaternion.identity, _trPopup);
     }
+
+    public void Close_PopUp()
+    {
+        if (_trPopup.childCount == 0)
+            return;
+        
+         Transform child = _trPopup.GetChild(0);
+
+         Destroy(child.gameObject);
+        
+    }
 }

@@ -31,9 +31,7 @@ public class Contract_Page : MonoBehaviour {
     public void Push_ShowDetail()
     {
         Debug.Log("Show Detail");
-
-
-
+        
         _GameManager.Show_Popup(_QuestManager);
     }
 
