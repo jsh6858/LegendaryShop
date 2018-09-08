@@ -5,11 +5,10 @@ using UnityEngine;
 public class Tab3Manager : MonoBehaviour {
     
     public bool isActive = false;
-    GameObject myPage;
+    public GameObject myPage;
 
     void Awake()
     {
-        myPage = GameObject.Find("Tab3Panel");
         myPage.SetActive(false);
     }
 

@@ -5,11 +5,10 @@ using UnityEngine;
 public class Tab2Manager : MonoBehaviour {
 
     public bool isActive = false;
-    GameObject myPage;
+    public GameObject myPage;
 
     void Awake()
     {
-        myPage = GameObject.Find("Tab2Panel");
         myPage.SetActive(false);
     }
 
