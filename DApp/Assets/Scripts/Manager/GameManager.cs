@@ -97,6 +97,10 @@ public class GameManager : MonoBehaviour
          Transform child = _trPopup.GetChild(0);
 
          Destroy(child.gameObject);
-        
+    }
+
+    public void Push_PlayToTitle()
+    {
+        SceneChanger.Instance.PlayToTitle();
     }
 }

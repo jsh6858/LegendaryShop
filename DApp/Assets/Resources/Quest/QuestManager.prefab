@@ -8612,8 +8612,8 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
   onClick:
-  - mTarget: {fileID: 114218837692233054}
-    mMethodName: Push_Admission
+  - mTarget: {fileID: 114872283776250254}
+    mMethodName: Close_Detail
     mParameters: []
     oneShot: 0
 --- !u!114 &114350210885933682

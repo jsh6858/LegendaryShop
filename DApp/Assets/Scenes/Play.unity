@@ -265,7 +265,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 417280422}
+    mMethodName: Push_PlayToTitle
+    mParameters: []
+    oneShot: 0
 --- !u!65 &116480850
 BoxCollider:
   m_ObjectHideFlags: 0

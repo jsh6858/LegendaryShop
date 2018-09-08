@@ -13,9 +13,4 @@ public class Quest_Bottom : MonoBehaviour {
 	void Update () {
 		
 	}
-
-    public void Push_Admission()
-    {
-        Debug.Log("Admission");
-    }
 }
