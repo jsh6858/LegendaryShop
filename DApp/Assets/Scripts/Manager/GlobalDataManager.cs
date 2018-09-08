@@ -220,13 +220,17 @@ namespace LegendFramework
         string Name;
         string ThumbImageId;
         ITEM_TYPE Type;
+        string Property;
+        string IconImageId;
         
-        public Item(int _no, string _name, string _thumb, ITEM_TYPE _type)
+        public Item(int _no, string _name, string _thumb, ITEM_TYPE _type, string _property, string _icon)
         {
             No = _no;
             Name = _name;
             ThumbImageId = _thumb;
             Type = _type;
+            Property = _property;
+            IconImageId = _icon;
         }
     }
 }
