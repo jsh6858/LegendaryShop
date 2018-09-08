@@ -34,8 +34,16 @@ public class Contract_Info : MonoBehaviour {
         _myQuest = _quest;
 
         _fMaxTime = _fRemainingTime = _myQuest.PeriodTime;
-        _sprMon.spriteName = _myQuest.MyMonster.ToString();
+        //_sprMon.spriteName = GlobalDdataManager.MonsterList[_myQuest.MyMonster].MonsterSdId;
 
+        int iPartyMember = GlobalDdataManager.PartyList[_myQuest.MyParty].PartyMembers[0];
+        //_sprHun1.spriteName = GlobalDdataManager.HunterList[iPartyMember].SDImageId;
+
+        iPartyMember = GlobalDdataManager.PartyList[_myQuest.MyParty].PartyMembers[1];
+        //_sprHun1.spriteName = GlobalDdataManager.HunterList[iPartyMember].SDImageId;
+
+        iPartyMember = GlobalDdataManager.PartyList[_myQuest.MyParty].PartyMembers[2];
+        //_sprHun1.spriteName = GlobalDdataManager.HunterList[iPartyMember].SDImageId;
 
         _fMaxTime = _fRemainingTime = Random.Range(60f, 80f);
     }
