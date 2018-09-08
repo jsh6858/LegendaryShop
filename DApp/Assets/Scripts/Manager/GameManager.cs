@@ -33,8 +33,15 @@ public class GameManager : MonoBehaviour
         
         client = new LegendaryClient();
         //_ConnectToLoomNetwork();
-
+        
         _LoadData();
+
+        GlobalDdataManager.MyWeaponList = new List<Weapon>();
+        for (int i = 0; i < 55; ++i)
+        {
+            int ran = UnityEngine.Random.Range(0, 87);
+            GlobalDdataManager.MyWeaponList.Add(GlobalDdataManager.WeaponList[ran]);
+        }
 
         //_GetPlayerName();
 
@@ -55,7 +62,7 @@ public class GameManager : MonoBehaviour
 
     private void _ConnectToLoomNetwork()
     {
-        client.SignIn("172.30.1.14");
+        client.SignIn("172.30.1.34");
         //client.SignIn("127.0.0.1");
     }
 
