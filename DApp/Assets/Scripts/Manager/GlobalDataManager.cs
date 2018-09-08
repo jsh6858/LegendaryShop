@@ -6,6 +6,20 @@ namespace LegendFramework
 {
     public class GlobalDdataManager
     {
+        static private string __playerName;
+        static public string PlayerName
+        {
+            get
+            {
+                return __playerName;
+            }
+
+            set
+            {
+                __playerName = value;
+            }
+        }
+
         static private List<Hunter> __hunterList;
         static public List<Hunter> HunterList;
 
@@ -20,6 +34,20 @@ namespace LegendFramework
             set
             {
                 __weaponList = value;
+            }
+        }
+
+        static private List<Party> __partyList;
+        static public List<Party> PartyList
+        {
+            get
+            {
+                return __partyList;
+            }
+
+            set
+            {
+                __partyList = value;
             }
         }
 
@@ -62,6 +90,20 @@ namespace LegendFramework
             set
             {
                 __itemList = value;
+            }
+        }
+
+        static private List<Monster> __monsterList;
+        static public List<Monster> MonsterList
+        {
+            get
+            {
+                return __monsterList;
+            }
+
+            set
+            {
+                __monsterList = value;
             }
         }
     }
@@ -145,13 +187,15 @@ namespace LegendFramework
         int No;
         string MonsterName;
         string MonsterThumbImageId;
+        string MonsterSdId;
         int MonsterPower;
 
-        public Monster(int _no, string _name, string _thumb, int _power)
+        public Monster(int _no, string _name, string _thumb, string _sd, int _power)
         {
             No = _no;
             MonsterName = _name;
             MonsterThumbImageId = _thumb;
+            MonsterSdId = _sd;
             MonsterPower = _power;
         }
     }
