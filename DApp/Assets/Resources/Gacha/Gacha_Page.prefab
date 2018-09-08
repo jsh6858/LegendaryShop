@@ -115,6 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4212887540579376}
+  - component: {fileID: 114999084824241884}
   m_Layer: 9
   m_Name: Gacha_Page
   m_TagString: Untagged
@@ -131,6 +132,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4570060587864176}
   - component: {fileID: 114389033412887744}
+  - component: {fileID: 114757992448305500}
+  - component: {fileID: 65468307964474112}
   m_Layer: 9
   m_Name: Child
   m_TagString: Untagged
@@ -549,6 +552,18 @@ Transform:
   m_Father: {fileID: 4212887540579376}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65468307964474112
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507796382990160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 315, y: 80, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114083335741945346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1239,6 +1254,34 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
   mSpriteName: Paper Background
   mFillCenter: 1
+--- !u!114 &114757992448305500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507796382990160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e862f287df53bb64db191162f851a296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHoverOver: []
+  onHoverOut: []
+  onPress: []
+  onRelease: []
+  onSelect: []
+  onDeselect: []
+  onClick:
+  - mTarget: {fileID: 114999084824241884}
+    mMethodName: Push_ShowMakeWeapon
+    mParameters: []
+    oneShot: 0
+  onDoubleClick: []
+  onDragStart: []
+  onDragEnd: []
+  onDragOver: []
+  onDragOut: []
+  onDrag: []
 --- !u!114 &114771745891279496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1523,3 +1566,14 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
   mSpriteName: Paper Background
   mFillCenter: 1
+--- !u!114 &114999084824241884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276880923165392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 575761db32ce65041a4279eadcdd03ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

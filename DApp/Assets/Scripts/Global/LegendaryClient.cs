@@ -66,44 +66,54 @@ namespace LegendFramework
             });
 
             //string abi = "[{\"constant\":false,\"inputs\":[{\"name\":\"title\",\"type\":\"string\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"monsterName\",\"type\":\"string\"},{\"name\":\"monsterPower\",\"type\":\"uint256\"}],\"name\":\"createQuest\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"users\",\"outputs\":[{\"name\":\"username\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"username\",\"type\":\"string\"}],\"name\":\"createUser\",\"outputs\":[{\"name\":\"uid\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_uid\",\"type\":\"uint256\"}],\"name\":\"openRandomQuest\",\"outputs\":[{\"name\":\"uid\",\"type\":\"uint256\"},{\"name\":\"qid\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"getUserInfo\",\"outputs\":[{\"name\":\"username\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getQuestCount\",\"outputs\":[{\"name\":\"count\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getUserCount\",\"outputs\":[{\"name\":\"count\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"ownerUid\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"quests\",\"outputs\":[{\"name\":\"key\",\"type\":\"uint256\"},{\"name\":\"title\",\"type\":\"string\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"},{\"name\":\"monsterName\",\"type\":\"string\"},{\"name\":\"monsterPower\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"questToOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"uid\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"title\",\"type\":\"string\"}],\"name\":\"NewQuest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}]";
-            string abi = "[{\"constant\":true,\"inputs\":[],\"name\":\"userCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"}],\"name\":\"createQuest\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"quest1\",\"outputs\":[{\"name\":\"inUse\",\"type\":\"uint256\"},{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"modulus\",\"type\":\"uint256\"}],\"name\":\"rand\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"users\",\"outputs\":[{\"name\":\"username\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"username\",\"type\":\"string\"}],\"name\":\"createUser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"ping\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getUserInfo\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"},{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"questSlotId\",\"type\":\"uint256\"}],\"name\":\"resultQuest\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"questSlotId\",\"type\":\"uint256\"}],\"name\":\"startQuest\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"quest2\",\"outputs\":[{\"name\":\"inUse\",\"type\":\"uint256\"},{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getUserCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"quest4\",\"outputs\":[{\"name\":\"inUse\",\"type\":\"uint256\"},{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"ownerQuestCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"quest3\",\"outputs\":[{\"name\":\"inUse\",\"type\":\"uint256\"},{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"ownerUid\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"whoAmI\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"success\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"qid\",\"type\":\"uint256\"}],\"name\":\"NewQuest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"uid\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"title\",\"type\":\"string\"}],\"name\":\"NewUser\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"questSlotId\",\"type\":\"uint256\"}],\"name\":\"StartQuest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"questSlotId\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"qid\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"remainTime\",\"type\":\"uint256\"}],\"name\":\"ResultQuest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}]";
-
+            string abi = "[{\"constant\":true,\"inputs\":[],\"name\":\"userCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"}],\"name\":\"createQuest\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getReadyQuestCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"questSlotId\",\"type\":\"uint256\"}],\"name\":\"deleteQuest\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"quest1\",\"outputs\":[{\"name\":\"inReady\",\"type\":\"bool\"},{\"name\":\"inRunning\",\"type\":\"bool\"},{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"modulus\",\"type\":\"uint256\"}],\"name\":\"rand\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nowTime\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"users\",\"outputs\":[{\"name\":\"username\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"username\",\"type\":\"string\"}],\"name\":\"createUser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"ping\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getUserInfo\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"},{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getRunningQuestCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"},{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"questList\",\"outputs\":[{\"name\":\"inReady\",\"type\":\"bool\"},{\"name\":\"inRunning\",\"type\":\"bool\"},{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"runningQuestCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"readyQuestCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"questSlotId\",\"type\":\"uint256\"}],\"name\":\"resultQuest\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"questSlotId\",\"type\":\"uint256\"}],\"name\":\"startQuest\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"quest2\",\"outputs\":[{\"name\":\"inReady\",\"type\":\"bool\"},{\"name\":\"inRunning\",\"type\":\"bool\"},{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getUserCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"quest4\",\"outputs\":[{\"name\":\"inReady\",\"type\":\"bool\"},{\"name\":\"inRunning\",\"type\":\"bool\"},{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"ownerQuestCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"quest3\",\"outputs\":[{\"name\":\"inReady\",\"type\":\"bool\"},{\"name\":\"inRunning\",\"type\":\"bool\"},{\"name\":\"qid\",\"type\":\"uint256\"},{\"name\":\"periodTime\",\"type\":\"uint256\"},{\"name\":\"endTime\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"ownerUid\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"whoAmI\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"success\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"qid\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"questSlotId\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"reason\",\"type\":\"string\"}],\"name\":\"NewQuest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"uid\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"title\",\"type\":\"string\"}],\"name\":\"NewUser\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"questSlotId\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"endTime\",\"type\":\"uint256\"}],\"name\":\"StartQuest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"status\",\"type\":\"string\"},{\"indexed\":false,\"name\":\"questSlotId\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"qid\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"remainTime\",\"type\":\"uint256\"}],\"name\":\"ResultQuest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"success\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"questSlotId\",\"type\":\"uint256\"}],\"name\":\"DeleteQuest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}]";
 
             Address contractAddr = await client.ResolveContractAddressAsync("Legendary");
             //var contractAddr = Address.FromHexString("0x6fbd04200Edc1579BDe307A76E1aAc6ef96ACE5A");
 
             evmContract = new EvmContract(client, contractAddr, callerAddr, abi);
             evmContract.EventReceived += this.EventReceivedHandler;
-
+            
+            //await this.evmContract.CallAsync("deleteQuest", 1);
+            //await this.evmContract.CallAsync("deleteQuest", 2);
+            //await this.evmContract.CallAsync("deleteQuest", 3);
+            //await this.evmContract.CallAsync("deleteQuest", 4);
         }
 
         private void EventReceivedHandler(object sender, EvmChainEventArgs e)
         {
             Debug.Log("Event: " + e.EventName + ", " + e);
 
-            if("NewUser" == e.EventName)
+            if ("NewUser" == e.EventName)
             {
                 newUserEvent result = e.DecodeEventDto<newUserEvent>();
-                Debug.Log("NewUser result: " + result.state +":" + result.title);
+                Debug.Log("NewUser result: " + result.state + ":" + result.title);
             }
-            else if("NewQuest" == e.EventName)
+            else if ("NewQuest" == e.EventName)
             {
                 newQuestEvent result = e.DecodeEventDto<newQuestEvent>();
-                Debug.Log("NewQuest result: " + result.success + ":" + result.qid);
+                Debug.Log("NewQuest result: " + result.success + ":" + result.qid + ":" + result.questSlotId + ":" + result.reason);
             }
             else if ("StartQuest" == e.EventName)
             {
                 startQuestEvent result = e.DecodeEventDto<startQuestEvent>();
-                Debug.Log("StartQuest result: " + result.questSlotId);
+                Debug.Log("StartQuest result: " + result.questSlotId + ":" + result.endTime);
             }
             else if ("ResultQuest" == e.EventName)
             {
                 resultQuestEvent result = e.DecodeEventDto<resultQuestEvent>();
-                Debug.Log("ResultQuest result: " + result.questSlotId + ":" + result.qid + ":" + result.remainTime);
+                Debug.Log("ResultQuest result: " + result.status + ":" + result.questSlotId + ":" + result.qid + ":" + result.remainTime);
             }
+            else if ("DeleteQuest" == e.EventName)
+            {
+                deleteQuestEvent result = e.DecodeEventDto<deleteQuestEvent>();
+                Debug.Log("ResultQuest result: " + result.success + ":" + result.questSlotId);
+            }
+            else
+                Debug.Log(e.EventName);
         }
 
-        public async void GetTileMapState()
+        public async void f5_press()
         {
             if (null == this.evmContract)
             {
@@ -114,6 +124,26 @@ namespace LegendFramework
             //output result = await this.evmContract.StaticCallDtoTypeOutputAsync<output>("GetTileMapState");
             //Debug.Log(result.State);
             await this.evmContract.CallAsync("resultQuest", 1);
+        }
+
+        public async void f1_press()
+        {
+            output2 result = await this.evmContract.StaticCallDtoTypeOutputAsync<output2>("nowTime");
+            Debug.Log("nowTime: " + result.State);
+
+            output2 result2 = await this.evmContract.StaticCallDtoTypeOutputAsync<output2>("ping");
+            Debug.Log("Ping: " + result2.State);
+        }
+
+        public async void f3_press()
+        {
+            if (null == this.evmContract)
+            {
+                Debug.Log("Not signed in!");
+                return;
+            }
+
+            await this.evmContract.CallAsync("startQuest", 1);
         }
 
         public async void SetTileMapState()
@@ -128,12 +158,12 @@ namespace LegendFramework
             {
                 //string str = "abcded";
                 //await this.evmContract.CallAsync("createUser", str);
-                
-                await this.evmContract.CallAsync("createQuest", 20, 3001000);
 
-                //await this.evmContract.CallAsync("startQuest", 1);
+                await this.evmContract.CallAsync("createQuest", 10, 60);
 
-                
+                //await this.evmContract.CallAsync("startQuest", 2);
+
+
 
                 //string str = "abcded";
                 //await this.evmContract.CallAsync("createUser", str);
@@ -190,24 +220,45 @@ namespace LegendFramework
 
             [Parameter("uint", "qid", 2)]
             public uint qid { get; set; }
+
+            [Parameter("uint", "questSlotId", 3)]
+            public uint questSlotId { get; set; }
+
+            [Parameter("string", "reason", 4)]
+            public string reason { get; set; }
         }
 
         public class startQuestEvent
         {
             [Parameter("uint", "questSlotId", 1)]
             public uint questSlotId { get; set; }
+
+            [Parameter("uint", "endTime", 2)]
+            public uint endTime { get; set; }
         }
 
         public class resultQuestEvent
         {
-            [Parameter("uint", "questSlotId", 1)]
+            [Parameter("string", "status", 1)]
+            public string status { get; set; }
+
+            [Parameter("uint", "questSlotId", 2)]
             public uint questSlotId { get; set; }
 
-            [Parameter("uint", "qid", 2)]
+            [Parameter("uint", "qid", 3)]
             public uint qid { get; set; }
 
-            [Parameter("uint", "remainTime", 3)]
+            [Parameter("uint", "remainTime", 4)]
             public uint remainTime { get; set; }
+        }
+
+        public class deleteQuestEvent
+        {
+            [Parameter("bool", "success", 1)]
+            public bool success { get; set; }
+
+            [Parameter("uint", "questSlotId", 2)]
+            public uint questSlotId { get; set; }
         }
     }
 }
