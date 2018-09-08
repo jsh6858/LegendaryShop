@@ -7,9 +7,11 @@ public class Tab1Manager : MonoBehaviour {
     public bool isActive = false;
     public GameObject myPage;
 
+    GameObject _objContract;
+
     void Awake()
     {
-        myPage.SetActive(true);
+        CallManager();
     }
 	
 	void Update ()
@@ -21,6 +23,13 @@ public class Tab1Manager : MonoBehaviour {
     {
         isActive = true;
         myPage.SetActive(true);
+
+        if(null == _objContract)
+        {
+            GameObject obj = Resources.Load("Contract/Contract_Page") as GameObject;
+
+            _objContract = GameObject.Instantiate(obj, Vector3.zero, Quaternion.identity, myPage.transform);
+        }
     }
 
     public void DropManager()

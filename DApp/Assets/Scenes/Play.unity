@@ -554,6 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc15c0da73e981a499d5372ada929ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _trPopup: {fileID: 309277651}
 --- !u!1 &521070344
 GameObject:
   m_ObjectHideFlags: 0

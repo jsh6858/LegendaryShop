@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     Transform[] bottomBTNs;
 
+    public Transform _trPopup;
+
     void Awake()
     {
         tab1Manager = GameObject.Find("Tab1Manager").GetComponent<Tab1Manager>();
@@ -73,5 +75,17 @@ public class GameManager : MonoBehaviour
         tab1Manager.DropManager();
         tab2Manager.DropManager();
         tab3Manager.CallManager();
+    }
+
+    public void Show_Popup(GameObject obj)
+    {
+        if(_trPopup.childCount != 0)
+        {
+            Transform child = _trPopup.GetChild(0);
+
+            Destroy(child.gameObject);
+        }
+
+        Instantiate(obj, Vector3.zero, Quaternion.identity, _trPopup);
     }
 }
