@@ -5,23 +5,33 @@ using LegendFramework;
 
 public class Inventory_Weapon : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-
+    public Weapon selectedWeapon;
+    
+    void Start()
+    {
         GameObject item = Resources.Load("Inventory/Item_Weapon") as GameObject;
+
+        GameObject gridObj = GameObject.Find("WeaponScrollView").transform.Find("Grid").gameObject;
+        UIGrid grid = gridObj.GetComponent<UIGrid>();
+        GameObject detailView = gameObject.transform.Find("DetailView").gameObject;
 
         for (int i = 0; i < GlobalDdataManager.MyWeaponList.Count; ++i)
         {
             Weapon w = GlobalDdataManager.MyWeaponList[i];
 
-            NGUITools.AddChild(GameObject.Find("WeaponScrollView").transform.Find("Grid").gameObject, item);
-            GameObject obj = GameObject.Find("WeaponScrollView").transform.Find("Grid").GetComponent<UIGrid>().GetChild(
-                GameObject.Find("WeaponScrollView").transform.Find("Grid").GetComponent<UIGrid>().GetChildList().Count - 1).gameObject;
+            NGUITools.AddChild(gridObj, item);
+            GameObject newObj = grid.GetChild(grid.GetChildList().Count - 1).gameObject;
 
-            obj.transform.Find("Label_WeaponRank").GetComponent<UILabel>().text = w.Power.ToString();
-            obj.GetComponent<Item_Weapon>().Push_ItemWeapon(w, gameObject.transform.Find("DetailView").gameObject);
+            int rank = (int)w.Power;
+            newObj.transform.Find("Label_WeaponRank").GetComponent<UILabel>().text = "Rank" + rank;
+            newObj.GetComponent<Item_Weapon>().Push_ItemWeapon(this, w, detailView);
         }
-        GameObject.Find("WeaponScrollView").transform.Find("Grid").GetComponent<UIGrid>().Reposition();
+        grid.Reposition();
+
+        if (EasyManager.Instance._bChooseWeapon)
+            detailView.transform.Find("Button_Select").gameObject.SetActive(true);
+        else
+            detailView.transform.Find("Button_Select").gameObject.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -32,5 +42,14 @@ public class Inventory_Weapon : MonoBehaviour {
     public void Push_CloseInventory()
     {
         EasyManager.Instance.GetObj("GameManager").GetComponent<GameManager>().Close_PopUp();
+    }
+
+    public void Push_SelectWeapon()
+    {
+        if (null != selectedWeapon)
+        {
+            EasyManager.Instance.Weapon_Select(selectedWeapon);
+            EasyManager.Instance.GetObj("GameManager").GetComponent<GameManager>().Close_PopUp();
+        }
     }
 }

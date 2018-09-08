@@ -765,6 +765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   myPage: {fileID: 1829534542}
+  _objContract: {fileID: 0}
 --- !u!1 &557288950
 GameObject:
   m_ObjectHideFlags: 0
