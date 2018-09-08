@@ -65,6 +65,20 @@ namespace LegendFramework
             }
         }
 
+        static private List<Quest> __questReadyList;
+        static public List<Quest> QuestReadyList
+        {
+            get
+            {
+                return __questReadyList;
+            }
+
+            set
+            {
+                __questReadyList = value;
+            }
+        }
+
         static private List<Quest> __questProgressList;
         static public List<Quest> QuestProgressList
         {
