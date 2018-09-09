@@ -49,7 +49,7 @@ public class HunterAndWeapon : MonoBehaviour {
         _Level.text = "Lv " + Random.Range(50, 99);
         _Name.text = hunter.Name;
         _Power.text = hunter.Power.ToString();
-        //_SprHunter.spriteName = hunter.SDImageId.ToString();
+        _SprHunter.spriteName = hunter.ThumbImageId.ToString();
         _SprBestWeapon.spriteName = Max_Value(hunter.Mastery).ToString();
         _Number.text = iNum.ToString();
     }
@@ -59,7 +59,7 @@ public class HunterAndWeapon : MonoBehaviour {
         _WpLevel.text = "Lv " + Random.Range(50, 99);
         _Percentage.text = string.Format("({0:#})%", Random.Range(60f, 99f));
         _WpPower.text = weapon.Power.ToString();
-        //_SprWeapon.spriteName = weapon.ThumbImageId.ToString();
+        _SprWeapon.spriteName = weapon.ThumbImageId.ToString();
         //_SprBestChoice = weapon.
     }
 

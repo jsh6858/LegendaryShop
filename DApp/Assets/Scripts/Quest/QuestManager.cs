@@ -70,7 +70,7 @@ public class QuestManager : MonoBehaviour {
         _MonsterName.text = monster.MonsterName;
         _MonsterPower.text = monster.MonsterPower.ToString();
         _Time.text = quest.PeriodTime.ToString();
-        //_SprMon.spriteName = monster.MonsterSdId.ToString();
+        _SprMon.spriteName = monster.MonsterSdId.ToString();
 
         int[] normal = quest.Normal_Trophy;
         int[] unique = quest.Random_Trophy;
@@ -178,7 +178,8 @@ public class QuestManager : MonoBehaviour {
 
             fTime -= Time.deltaTime;
 
-            _trHand.Translate(new Vector3(1f, -2f) * Time.deltaTime * 0.2f);
+            if(fTime < 1f)
+                _trHand.Translate(new Vector3(1f, -2f) * Time.deltaTime * 0.2f);
 
             yield return null;
         }

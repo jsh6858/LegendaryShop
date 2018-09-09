@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1042698912100920}
+  m_IsPrefabAsset: 1
+--- !u!1 &1042698912100920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4457842680992682}
+  - component: {fileID: 114857987674164598}
+  m_Layer: 0
+  m_Name: Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4457842680992682
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042698912100920}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114857987674164598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042698912100920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 009163a8ae6717c41afaff94d5827f1f, type: 2}
+  mSprites:
+  - name: hunter_00
+    x: 1608
+    y: 1034
+    width: 1063
+    height: 1078
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 36
+    paddingRight: 0
+    paddingTop: 21
+    paddingBottom: 0
+  - name: hunter_10
+    x: 0
+    y: 239
+    width: 1607
+    height: 1873
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 408
+    paddingRight: 0
+    paddingTop: 142
+    paddingBottom: 0
+  - name: hunter_20
+    x: 0
+    y: 2113
+    width: 1617
+    height: 1983
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 176
+    paddingRight: 222
+    paddingTop: 32
+    paddingBottom: 0
+  - name: hunter_sd_00
+    x: 2672
+    y: 3536
+    width: 351
+    height: 560
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 73
+    paddingRight: 67
+    paddingTop: 94
+    paddingBottom: 26
+  - name: hunter_sd_01
+    x: 2449
+    y: 473
+    width: 379
+    height: 560
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 46
+    paddingRight: 66
+    paddingTop: 94
+    paddingBottom: 26
+  - name: hunter_sd_10
+    x: 1608
+    y: 11
+    width: 392
+    height: 459
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 69
+    paddingRight: 30
+    paddingTop: 127
+    paddingBottom: 94
+  - name: hunter_sd_11
+    x: 2449
+    y: 13
+    width: 384
+    height: 459
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 77
+    paddingRight: 30
+    paddingTop: 127
+    paddingBottom: 94
+  - name: hunter_sd_20
+    x: 1608
+    y: 471
+    width: 417
+    height: 562
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 50
+    paddingRight: 24
+    paddingTop: 77
+    paddingBottom: 41
+  - name: hunter_sd_21
+    x: 2026
+    y: 448
+    width: 422
+    height: 585
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 35
+    paddingRight: 34
+    paddingTop: 48
+    paddingBottom: 47
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []

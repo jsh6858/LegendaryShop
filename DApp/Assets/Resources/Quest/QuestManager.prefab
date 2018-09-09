@@ -4009,8 +4009,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431910643531760}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -76, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.999}
+  m_LocalPosition: {x: -86, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4640124091862156}
   m_RootOrder: 4
@@ -4134,7 +4134,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292237350664272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -2, z: 0}
+  m_LocalPosition: {x: -1, y: -11, z: 0}
   m_LocalScale: {x: 0.999, y: 0.999, z: 0.999}
   m_Children: []
   m_Father: {fileID: 4544498346109504}
@@ -4173,8 +4173,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1283894648203848}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 123, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.0000001}
+  m_LocalPosition: {x: 123, y: 3, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 4708101611696510}
   m_RootOrder: 5
@@ -4402,7 +4402,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1522698047028646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -63, y: -18, z: 0}
+  m_LocalPosition: {x: -63, y: -25, z: 0}
   m_LocalScale: {x: 0.999, y: 0.999, z: 0.999}
   m_Children: []
   m_Father: {fileID: 4908266190156626}
@@ -4824,7 +4824,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1410855174092218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -116, y: 0, z: 0}
+  m_LocalPosition: {x: -116, y: -9.000006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4544498346109504}
@@ -5063,8 +5063,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292249915972586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -76, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.999}
+  m_LocalPosition: {x: -86, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4596971821995692}
   m_RootOrder: 4
@@ -5105,7 +5105,7 @@ Transform:
   m_GameObject: {fileID: 1187613440817360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -76, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4722905500090974}
   m_RootOrder: 4
@@ -5348,7 +5348,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1646659245603398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -292, y: 6, z: 0}
+  m_LocalPosition: {x: -293, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4908266190156626}
@@ -5659,7 +5659,7 @@ Transform:
   m_GameObject: {fileID: 1405212021800700}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -76, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4143124807386618}
   m_RootOrder: 4
@@ -5794,7 +5794,7 @@ Transform:
   m_GameObject: {fileID: 1029540052799072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -76, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4913410701096824}
   m_RootOrder: 4
@@ -6015,8 +6015,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1456180394830590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -76, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.999}
+  m_LocalPosition: {x: -86, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4145987724769070}
   m_RootOrder: 4
@@ -6817,14 +6817,14 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 50
-  mHeight: 50
+  mWidth: 52
+  mHeight: 62
   mDepth: 40
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: 0.83870965
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -6838,8 +6838,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Orc Armor - Shoulders
+  mAtlas: {fileID: 114026612309136150, guid: 3c101d929fd0eb1458a27e7bb5ed570e, type: 2}
+  mSpriteName: layer_item_03
   mFillCenter: 1
 --- !u!114 &114028861141717926
 MonoBehaviour:
@@ -8792,15 +8792,15 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 100
-  mHeight: 100
+  mWidth: 75
+  mHeight: 75
   mDepth: 40
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -8813,8 +8813,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Smooth
+  mAtlas: {fileID: 114088940071731468, guid: 18e6098420adb5d4b818073a454fb8b0, type: 2}
+  mSpriteName: weapon_thumb_00
   mFillCenter: 1
 --- !u!114 &114234621876232450
 MonoBehaviour:
@@ -10620,15 +10620,15 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 100
-  mHeight: 100
+  mWidth: 60
+  mHeight: 60
   mDepth: 40
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -10641,8 +10641,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Smooth
+  mAtlas: {fileID: 114857987674164598, guid: d2847d22c81e0a54abd9ee4a1e2da089, type: 2}
+  mSpriteName: hunter_00
   mFillCenter: 1
 --- !u!114 &114452464873546230
 MonoBehaviour:
@@ -10796,15 +10796,15 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 100
-  mHeight: 100
+  mWidth: 60
+  mHeight: 60
   mDepth: 40
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -10817,8 +10817,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Smooth
+  mAtlas: {fileID: 114857987674164598, guid: d2847d22c81e0a54abd9ee4a1e2da089, type: 2}
+  mSpriteName: hunter_10
   mFillCenter: 1
 --- !u!114 &114466005081192278
 MonoBehaviour:
@@ -11163,15 +11163,15 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 100
-  mHeight: 100
+  mWidth: 75
+  mHeight: 75
   mDepth: 40
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -11184,8 +11184,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Smooth
+  mAtlas: {fileID: 114088940071731468, guid: 18e6098420adb5d4b818073a454fb8b0, type: 2}
+  mSpriteName: weapon_thumb_00
   mFillCenter: 1
 --- !u!114 &114496036673321094
 MonoBehaviour:
@@ -12384,15 +12384,15 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 100
-  mHeight: 100
+  mWidth: 60
+  mHeight: 60
   mDepth: 40
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -12405,8 +12405,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Smooth
+  mAtlas: {fileID: 114857987674164598, guid: d2847d22c81e0a54abd9ee4a1e2da089, type: 2}
+  mSpriteName: hunter_00
   mFillCenter: 1
 --- !u!114 &114607536606535576
 MonoBehaviour:
@@ -15592,14 +15592,14 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 90
-  mHeight: 90
-  mDepth: 40
+  mWidth: 104
+  mHeight: 98
+  mDepth: 60
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: 1.0612245
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -15613,8 +15613,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Orc Armor - Boots
+  mAtlas: {fileID: 114611331181732308, guid: 3741ec2653027b6438999d8f33ced92c, type: 2}
+  mSpriteName: monster_sd_10
   mFillCenter: 1
 --- !u!114 &114949306226439556
 MonoBehaviour:
@@ -16044,15 +16044,15 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 100
-  mHeight: 100
+  mWidth: 75
+  mHeight: 75
   mDepth: 40
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -16065,8 +16065,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Smooth
+  mAtlas: {fileID: 114088940071731468, guid: 18e6098420adb5d4b818073a454fb8b0, type: 2}
+  mSpriteName: weapon_thumb_00
   mFillCenter: 1
 --- !u!114 &114970595505910236
 MonoBehaviour:

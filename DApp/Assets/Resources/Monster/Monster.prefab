@@ -54,8 +54,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: b6c802009ee655544adad5aa783b7a31, type: 2}
   mSprites:
   - name: monster_sd_00
-    x: 1172
-    y: 1506
+    x: 956
+    y: 334
     width: 890
     height: 542
     borderLeft: 0
@@ -67,8 +67,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: monster_sd_01
-    x: 956
-    y: 357
+    x: 1172
+    y: 1529
     width: 888
     height: 519
     borderLeft: 0
@@ -79,6 +79,19 @@ MonoBehaviour:
     paddingRight: 119
     paddingTop: 19
     paddingBottom: 4
+  - name: monster_sd_10
+    x: 0
+    y: 61
+    width: 955
+    height: 815
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 64
+    paddingRight: 11
+    paddingTop: 62
+    paddingBottom: 66
   - name: monster_thumb_10
     x: 0
     y: 877
@@ -92,19 +105,6 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: "\uC6A9 \uC544\uC774\uCF58 \uBCF5\uC0AC"
-    x: 0
-    y: 61
-    width: 955
-    height: 815
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 64
-    paddingRight: 11
-    paddingTop: 62
-    paddingBottom: 66
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0

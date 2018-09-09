@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4072666876965190}
   - component: {fileID: 114762722997501636}
   m_Layer: 0
-  m_Name: New Atlas
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

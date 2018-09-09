@@ -81,7 +81,7 @@ public class Contract_Page : MonoBehaviour
         {
             for(int j=0; j< _Contract_Infos.Length -1 - i; ++j)
             {
-                if (_Contract_Infos[j]._bActivate == false)
+                if (_Contract_Infos[j]._bActivate == false && _Contract_Infos[j+1]._bActivate)
                 {
                     Vector2 vTemp = _Contract_Infos[j].transform.position;
                     _Contract_Infos[j].transform.position = _Contract_Infos[j + 1].transform.position;
