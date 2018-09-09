@@ -53,6 +53,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 74ca51555b420f14da99888ed958464e, type: 2}
   mSprites:
+  - name: _____________
+    x: 721
+    y: 197
+    width: 720
+    height: 230
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: bk_01
     x: 0
     y: 742
@@ -93,7 +106,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: bk_layer
-    x: 1089
+    x: 1810
     y: 768
     width: 720
     height: 1280
@@ -132,8 +145,8 @@ MonoBehaviour:
     paddingTop: 73
     paddingBottom: 0
   - name: btn_bottom_page_02_1
-    x: 1442
-    y: 587
+    x: 0
+    y: 41
     width: 247
     height: 180
     borderLeft: 0
@@ -145,8 +158,8 @@ MonoBehaviour:
     paddingTop: 5
     paddingBottom: 0
   - name: btn_bottom_page_02_2
-    x: 1690
-    y: 663
+    x: 480
+    y: 92
     width: 247
     height: 104
     borderLeft: 0
@@ -158,8 +171,8 @@ MonoBehaviour:
     paddingTop: 81
     paddingBottom: 0
   - name: btn_bottom_page_03_1
-    x: 1690
-    y: 483
+    x: 0
+    y: 222
     width: 254
     height: 179
     borderLeft: 0
@@ -171,8 +184,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_bottom_page_03_2
-    x: 1442
-    y: 375
+    x: 255
+    y: 294
     width: 254
     height: 107
     borderLeft: 0
@@ -184,8 +197,8 @@ MonoBehaviour:
     paddingTop: 72
     paddingBottom: 0
   - name: btn_item
-    x: 1929
-    y: 363
+    x: 728
+    y: 77
     width: 118
     height: 119
     borderLeft: 0
@@ -197,8 +210,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: btn_weapon
-    x: 1810
-    y: 1929
+    x: 510
+    y: 282
     width: 119
     height: 119
     borderLeft: 0
@@ -222,9 +235,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: popup_constract
+    x: 1089
+    y: 768
+    width: 720
+    height: 1280
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: top_title
-    x: 1697
-    y: 319
+    x: 248
+    y: 58
     width: 231
     height: 163
     borderLeft: 0

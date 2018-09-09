@@ -50,9 +50,9 @@ public class Contract_Page : MonoBehaviour
         }
     }
 
-    private void OnEnable()
+    private void Awake()
     {
-       // _GameManager.ResultQuest(0);
+        _GameManager.ShowQuest(0);
     }
 
     public void Refresh_ActiveTime(GameObject obj)

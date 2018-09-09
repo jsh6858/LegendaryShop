@@ -3029,7 +3029,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.0833335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 99H 99M 99S
   mFontSize: 24
@@ -3425,7 +3425,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 146
+  mWidth: 144
   mHeight: 24
   mDepth: 41
   mMat: {fileID: 0}
@@ -3434,7 +3434,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.0833335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 99H 99M 99S
   mFontSize: 24
@@ -4311,7 +4311,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 5.8333335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: Next Meeting
   mFontSize: 24
@@ -4394,7 +4394,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 5.8333335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: Next Meeting
   mFontSize: 24
@@ -4914,7 +4914,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 146
+  mWidth: 144
   mHeight: 24
   mDepth: 41
   mMat: {fileID: 0}
@@ -4923,7 +4923,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.0833335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 99H 99M 99S
   mFontSize: 24
@@ -5415,7 +5415,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.0833335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 99H 99M 99S
   mFontSize: 24
@@ -5474,7 +5474,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 146
+  mWidth: 144
   mHeight: 24
   mDepth: 41
   mMat: {fileID: 0}
@@ -5483,7 +5483,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.0833335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 99H 99M 99S
   mFontSize: 24
@@ -5551,7 +5551,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 5.8333335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: Next Meeting
   mFontSize: 24
@@ -6356,7 +6356,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.0833335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 99H 99M 99S
   mFontSize: 24
@@ -6632,7 +6632,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.0833335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 99H 99M 99S
   mFontSize: 24
@@ -6861,7 +6861,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 5.8333335
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: Next Meeting
   mFontSize: 24

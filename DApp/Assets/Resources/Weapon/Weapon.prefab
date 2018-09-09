@@ -54,135 +54,135 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 06a6e344340c7674bbe74099d6280bc2, type: 2}
   mSprites:
   - name: weapon_thumb_00
-    x: 1699
-    y: 1143
-    width: 1026
-    height: 1006
+    x: 125
+    y: 135
+    width: 124
+    height: 125
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 85
-    paddingRight: 60
-    paddingTop: 103
-    paddingBottom: 62
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: weapon_thumb_01
-    x: 2066
-    y: 3155
-    width: 1014
-    height: 941
+    x: 250
+    y: 387
+    width: 124
+    height: 125
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 73
-    paddingRight: 84
-    paddingTop: 104
-    paddingBottom: 126
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: weapon_thumb_10
-    x: 2066
-    y: 2150
-    width: 759
-    height: 1004
+    x: 125
+    y: 387
+    width: 124
+    height: 125
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 290
-    paddingRight: 122
-    paddingTop: 84
-    paddingBottom: 83
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: weapon_thumb_11
-    x: 911
-    y: 2006
-    width: 787
-    height: 1011
+    x: 375
+    y: 387
+    width: 124
+    height: 125
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 256
-    paddingRight: 128
-    paddingTop: 100
-    paddingBottom: 60
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: weapon_thumb_20
-    x: 3081
-    y: 3012
-    width: 1010
-    height: 1084
+    x: 0
+    y: 261
+    width: 124
+    height: 125
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 20
-    paddingRight: 141
-    paddingTop: 65
-    paddingBottom: 22
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: weapon_thumb_21
-    x: 1005
-    y: 3018
-    width: 1060
-    height: 1078
+    x: 0
+    y: 387
+    width: 124
+    height: 125
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 9
-    paddingRight: 102
-    paddingTop: 65
-    paddingBottom: 28
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: weapon_thumb_30
     x: 0
-    y: 3109
-    width: 1004
-    height: 987
+    y: 135
+    width: 124
+    height: 125
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 108
-    paddingRight: 59
-    paddingTop: 123
-    paddingBottom: 61
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: weapon_thumb_31
-    x: 2826
-    y: 2083
-    width: 1022
-    height: 928
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 9
-    paddingRight: 140
-    paddingTop: 134
-    paddingBottom: 109
-  - name: weapon_thumb_40
-    x: 2726
-    y: 1150
-    width: 997
-    height: 932
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 87
-    paddingRight: 87
-    paddingTop: 120
-    paddingBottom: 119
-  - name: weapon_thumb_41
     x: 0
-    y: 2168
-    width: 910
-    height: 940
+    y: 9
+    width: 124
+    height: 125
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 97
-    paddingRight: 164
-    paddingTop: 55
-    paddingBottom: 176
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: weapon_thumb_40
+    x: 125
+    y: 261
+    width: 124
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: weapon_thumb_41
+    x: 125
+    y: 9
+    width: 124
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0

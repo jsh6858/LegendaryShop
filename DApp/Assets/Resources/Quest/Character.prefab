@@ -80,8 +80,8 @@ MonoBehaviour:
     paddingTop: 142
     paddingBottom: 0
   - name: hunter_sd_00
-    x: 1608
-    y: 409
+    x: 2672
+    y: 1488
     width: 351
     height: 560
     borderLeft: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
     paddingTop: 94
     paddingBottom: 26
   - name: hunter_sd_01
-    x: 1960
+    x: 2449
     y: 409
     width: 379
     height: 560
@@ -106,8 +106,8 @@ MonoBehaviour:
     paddingTop: 94
     paddingBottom: 26
   - name: hunter_sd_10
-    x: 2340
-    y: 510
+    x: 2672
+    y: 1028
     width: 392
     height: 459
     borderLeft: 0
@@ -119,8 +119,8 @@ MonoBehaviour:
     paddingTop: 127
     paddingBottom: 94
   - name: hunter_sd_11
-    x: 2340
-    y: 50
+    x: 3024
+    y: 1589
     width: 384
     height: 459
     borderLeft: 0
@@ -131,6 +131,32 @@ MonoBehaviour:
     paddingRight: 30
     paddingTop: 127
     paddingBottom: 94
+  - name: hunter_sd_20
+    x: 2031
+    y: 407
+    width: 417
+    height: 562
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 50
+    paddingRight: 24
+    paddingTop: 77
+    paddingBottom: 41
+  - name: hunter_sd_21
+    x: 1608
+    y: 384
+    width: 422
+    height: 585
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 35
+    paddingRight: 34
+    paddingTop: 48
+    paddingBottom: 47
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0
