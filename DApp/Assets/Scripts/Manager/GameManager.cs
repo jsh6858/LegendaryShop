@@ -46,7 +46,10 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
+        for(int i = 0; i < GlobalDdataManager.QuestProgressList.Count; i++)
+        {
+            GlobalDdataManager.QuestProgressList[i].SetPeriodTime();
+        }
     }
 
     private void _ConnectToLoomNetwork()
