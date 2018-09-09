@@ -54,8 +54,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 571b1d71a7324a34793d4e9fb5f42bc0, type: 2}
   mSprites:
   - name: ani_molu_01
-    x: 1689
-    y: 1302
+    x: 3390
+    y: 980
     width: 65
     height: 59
     borderLeft: 0
@@ -67,8 +67,8 @@ MonoBehaviour:
     paddingTop: 18
     paddingBottom: 0
   - name: ani_molu_02
-    x: 438
-    y: 33
+    x: 379
+    y: 690
     width: 65
     height: 77
     borderLeft: 0
@@ -80,8 +80,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: bk_blacksmith
-    x: 721
-    y: 261
+    x: 2941
+    y: 1040
     width: 567
     height: 1008
     borderLeft: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: bk_layer
-    x: 0
+    x: 721
     y: 768
     width: 720
     height: 1280
@@ -105,9 +105,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: btn_back
+    x: 3972
+    y: 448
+    width: 77
+    height: 101
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 1
   - name: btn_blacksmith
-    x: 1689
-    y: 1362
+    x: 3820
+    y: 607
     width: 187
     height: 57
     borderLeft: 0
@@ -119,8 +132,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_ok
-    x: 1689
-    y: 1420
+    x: 3630
+    y: 483
     width: 341
     height: 102
     borderLeft: 0
@@ -132,8 +145,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: eft_brk_01
-    x: 438
-    y: 111
+    x: 4008
+    y: 550
     width: 72
     height: 114
     borderLeft: 0
@@ -145,8 +158,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: eft_brk_02
-    x: 1499
-    y: 1316
+    x: 3630
+    y: 586
     width: 189
     height: 206
     borderLeft: 0
@@ -158,8 +171,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: eft_brk_03
-    x: 0
-    y: 4
+    x: 2690
+    y: 1048
     width: 218
     height: 221
     borderLeft: 0
@@ -171,8 +184,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: eft_weapon_get
-    x: 1289
-    y: 726
+    x: 3509
+    y: 963
     width: 542
     height: 543
     borderLeft: 0
@@ -184,8 +197,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 3
   - name: eft_weapon_get_02
-    x: 0
-    y: 226
+    x: 3509
+    y: 1507
     width: 545
     height: 541
     borderLeft: 0
@@ -197,8 +210,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 5
   - name: eft_weapon_get_03
-    x: 1499
-    y: 1523
+    x: 2163
+    y: 744
     width: 526
     height: 525
     borderLeft: 0
@@ -210,7 +223,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 21
   - name: eft_whaaaa
-    x: 721
+    x: 2163
     y: 1270
     width: 777
     height: 778
@@ -223,8 +236,8 @@ MonoBehaviour:
     paddingTop: 30
     paddingBottom: 36
   - name: img_box
-    x: 219
-    y: 7
+    x: 3411
+    y: 574
     width: 218
     height: 218
     borderLeft: 0
@@ -235,9 +248,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 1
     paddingBottom: 1
+  - name: img_tembox
+    x: 254
+    y: 642
+    width: 124
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: layer_con
-    x: 1289
-    y: 564
+    x: 2690
+    y: 631
     width: 720
     height: 161
     borderLeft: 0
@@ -249,8 +275,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: layer_con_04
-    x: 1246
-    y: 91
+    x: 2690
+    y: 870
     width: 699
     height: 169
     borderLeft: 0
@@ -262,8 +288,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: layer_con_track_sample_03
-    x: 546
-    y: 91
+    x: 3390
+    y: 793
     width: 699
     height: 169
     borderLeft: 0
@@ -273,6 +299,84 @@ MonoBehaviour:
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 1
+    paddingBottom: 0
+  - name: popup_bk
+    x: 0
+    y: 768
+    width: 720
+    height: 1280
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: weapon_grade_frame_0
+    x: 3820
+    y: 665
+    width: 126
+    height: 127
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 0
+    paddingTop: 1
+    paddingBottom: 0
+  - name: weapon_grade_frame_1
+    x: 3947
+    y: 665
+    width: 127
+    height: 127
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 0
+  - name: weapon_grade_frame_2
+    x: 0
+    y: 639
+    width: 125
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: weapon_grade_frame_3
+    x: 126
+    y: 640
+    width: 127
+    height: 127
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 0
+  - name: weaponpopup_sample
+    x: 1442
+    y: 768
+    width: 720
+    height: 1280
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
     paddingBottom: 0
   mPixelSize: 1
   mReplacement: {fileID: 0}
