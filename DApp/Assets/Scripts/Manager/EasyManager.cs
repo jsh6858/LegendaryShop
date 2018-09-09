@@ -9,7 +9,7 @@ public class EasyManager {
 
     public Contract_Info _curContract;
 
-    public bool _bChooseWeapon = true;
+    public bool _bChooseWeapon = false;
     Weapon _selectedWeapon;
 
     private EasyManager()

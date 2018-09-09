@@ -39,6 +39,12 @@ public class GameManager : MonoBehaviour
         GlobalDdataManager.MyWeaponList = new List<Weapon>();
         GlobalDdataManager.MyItemList = new List<Item>();
 
+        for(int i = 0; i < 55; ++i)
+        {
+            int rand = UnityEngine.Random.RandomRange(0, 18);
+            GlobalDdataManager.MyItemList.Add(GlobalDdataManager.ItemList[rand]);
+        }
+
         //_GetPlayerName();
 
         EasyManager.Instance.Initialize();
@@ -161,6 +167,10 @@ public class GameManager : MonoBehaviour
     public void Push_ShowMakeWeapon()
     {
         Show_Popup(Resources.Load("Gacha/Gacha_EffectPage") as GameObject);
+    }
+    public void Push_ShowItem(GameObject obj)
+    {
+        Show_Popup(Resources.Load("Inventory/Inventory_Item") as GameObject);
     }
 
     public void ActivatePanelCollider(bool b)

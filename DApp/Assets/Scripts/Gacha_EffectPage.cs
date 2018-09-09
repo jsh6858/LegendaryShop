@@ -28,7 +28,7 @@ public class Gacha_EffectPage : MonoBehaviour {
     private void Awake()
     {
         icon = gameObject.transform.Find("Result").transform.Find("Sprite").GetComponent<UISprite>();
-        outline = gameObject.transform.Find("Result").transform.Find("Sprite").transform.Find("Sprite_Outline").GetComponent<UISprite>();
+        outline = gameObject.transform.Find("Result").transform.Find("Sprite_Outline").GetComponent<UISprite>();
         Sprite_1 = gameObject.transform.Find("Sprite_Background").transform.Find("Sprite_1").gameObject;
         Sprite_2 = gameObject.transform.Find("Sprite_Background").transform.Find("Sprite_2").gameObject;
         Sprite_3 = gameObject.transform.Find("Sprite_Background").transform.Find("Sprite_3").gameObject;
