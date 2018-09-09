@@ -4620,7 +4620,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: 0, b: 0, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 424
   mHeight: 56
@@ -5343,8 +5343,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Bright
+  mAtlas: {fileID: 114762722997501636, guid: aed7fe562d0d48446b70a276ce8b6301, type: 2}
+  mSpriteName: bk_event_itemget
   mFillCenter: 1
 --- !u!114 &114148736665520128
 MonoBehaviour:
@@ -7683,7 +7683,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: 0, b: 0, a: 1}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 500
   mHeight: 105
