@@ -74,27 +74,27 @@ public class Item_Item : MonoBehaviour {
         switch(rand)
         {
             case 0:
-                str = "SSASD159aefaw5WWFgasdwafsaWASFW873wSAW12";
+                str = "[ID]:SSASD159aefaw5WWFgasdwafsaWASFW873wSAW12";
                 break;
 
             case 1:
-                str = "awWAD5asWD564WADasdaDWs513WDSAWADs53AWDs";
+                str = "[ID]:awWAD5asWD564WADasdaDWs513WDSAWADs53AWDs";
                 break;
 
             case 2:
-                str = "HJK156DHFJHHw53wdjsadklWADA56JEDNF<W4156";
+                str = "[ID]:HJK156DHFJHHw53wdjsadklWADA56JEDNF<W4156";
                 break;
 
             case 3:
-                str = "neonnahanteNwoni1bon2Bon3Bonjeongdabuens";
+                str = "[ID]:neonnahanteNwoni1bon2Bon3Bonjeongdabuens";
                 break;
 
             case 4:
-                str = "gundansWasaW46WAaW3WAS31WDsaWD84sW83sW8s";
+                str = "[ID]:gundansWasaW46WAaW3WAS31WDsaWD84sW83sW8s";
                 break;
 
             case 5:
-                str = "zasoseoYem89byeongha546NAgaDuizy456awASD";
+                str = "[ID]:zasoseoYem89byeongha546NAgaDuizy456awASD";
                 break;
 
         }
