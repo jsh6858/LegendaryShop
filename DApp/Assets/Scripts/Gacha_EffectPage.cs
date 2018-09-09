@@ -5,6 +5,8 @@ using LegendFramework;
 
 public class Gacha_EffectPage : MonoBehaviour {
 
+    UISprite icon;
+    UISprite outline;
     GameObject Sprite_1;
     GameObject Sprite_2;
     GameObject Sprite_3;
@@ -25,6 +27,8 @@ public class Gacha_EffectPage : MonoBehaviour {
 
     private void Awake()
     {
+        icon = gameObject.transform.Find("Result").transform.Find("Sprite").GetComponent<UISprite>();
+        outline = gameObject.transform.Find("Result").transform.Find("Sprite").transform.Find("Sprite_Outline").GetComponent<UISprite>();
         Sprite_1 = gameObject.transform.Find("Sprite_Background").transform.Find("Sprite_1").gameObject;
         Sprite_2 = gameObject.transform.Find("Sprite_Background").transform.Find("Sprite_2").gameObject;
         Sprite_3 = gameObject.transform.Find("Sprite_Background").transform.Find("Sprite_3").gameObject;
@@ -106,6 +110,16 @@ public class Gacha_EffectPage : MonoBehaviour {
             GlobalDdataManager.MyWeaponList.Add(w);
 
             Result.SetActive(true);
+            icon.spriteName = w.ThumbImageId;
+
+            if(WEAPON_GRADE.VERY_HIGH == w.Grade)
+                outline.spriteName = "weapon_grade_frame_0";
+            else if(WEAPON_GRADE.LEGENDARY == w.Grade)
+                outline.spriteName = "weapon_grade_frame_1";
+            else if (WEAPON_GRADE.LEGENDARY_TWO == w.Grade)
+                outline.spriteName = "weapon_grade_frame_2";
+            else if (WEAPON_GRADE.LEGENDARY_LAST == w.Grade)
+                outline.spriteName = "weapon_grade_frame_3";
             Result.transform.Find("Label_Type").GetComponent<UILabel>().text = w.Type.ToString();
             Result.transform.Find("Label_Name").GetComponent<UILabel>().text = w.Name;
             Result.transform.Find("Label_Power").GetComponent<UILabel>().text = "Power : " + w.Power.ToString();

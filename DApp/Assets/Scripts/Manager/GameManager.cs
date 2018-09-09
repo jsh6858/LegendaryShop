@@ -46,26 +46,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F1))
-        {
-            client.f1_press();
-        }
-        if (Input.GetKeyDown(KeyCode.F2))
-        {
-            client.SetTileMapState();
-        }
-        if (Input.GetKeyDown(KeyCode.F3))
-        {
-            client.f3_press();
-        }
-        if (Input.GetKeyDown(KeyCode.F5))
-        {
-            client.f5_press();
-        }
-        if (Input.GetKeyDown(KeyCode.F6))
-        {
-            client.f6_press();
-        }
+
     }
 
     private void _ConnectToLoomNetwork()

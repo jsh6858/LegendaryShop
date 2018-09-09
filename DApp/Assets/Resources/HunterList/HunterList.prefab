@@ -204,7 +204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1061180147922446
 GameObject:
   m_ObjectHideFlags: 1
@@ -581,6 +581,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1280847079655688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4082019565577048}
+  - component: {fileID: 114779247147833394}
+  m_Layer: 9
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1288319467176504
 GameObject:
   m_ObjectHideFlags: 1
@@ -613,7 +629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1297937882748500
 GameObject:
   m_ObjectHideFlags: 1
@@ -1675,7 +1691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1833940670708076
 GameObject:
   m_ObjectHideFlags: 1
@@ -1771,7 +1787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1853700162449536
 GameObject:
   m_ObjectHideFlags: 1
@@ -2016,7 +2032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4004599672884008
 Transform:
   m_ObjectHideFlags: 1
@@ -2102,6 +2118,19 @@ Transform:
   - {fileID: 4123939398278728}
   m_Father: {fileID: 4233675104585626}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4082019565577048
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1280847079655688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4877934219747414}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4089023300533110
 Transform:
@@ -2535,7 +2564,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1297937882748500}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 356, z: 0}
+  m_LocalPosition: {x: 0, y: 443, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4584583080966102}
@@ -3041,7 +3070,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1245435134301692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -237, z: 0}
+  m_LocalPosition: {x: 0, y: -284, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4303136001906352}
@@ -3463,6 +3492,7 @@ Transform:
   - {fileID: 4233675104585626}
   - {fileID: 4996529689530578}
   - {fileID: 4916627279898174}
+  - {fileID: 4082019565577048}
   - {fileID: 4985513252917940}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -3696,7 +3726,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4877934219747414}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4994435071292302
 Transform:
@@ -4620,7 +4650,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
   mWidth: 424
   mHeight: 56
@@ -4632,7 +4662,7 @@ MonoBehaviour:
   aspectRatio: 7.571429
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 114984209303878570, guid: 4c8b263ee06f42f4b80ceab9c5141ac3, type: 2}
+  mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
   mText: Monster Name
   mFontSize: 50
   mFontStyle: 0
@@ -5343,8 +5373,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 114762722997501636, guid: aed7fe562d0d48446b70a276ce8b6301, type: 2}
-  mSpriteName: bk_event_itemget
+  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
+  mSpriteName: Paper Background
   mFillCenter: 1
 --- !u!114 &114148736665520128
 MonoBehaviour:
@@ -7683,7 +7713,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
   mWidth: 500
   mHeight: 105
@@ -7695,7 +7725,7 @@ MonoBehaviour:
   aspectRatio: 4.7619047
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 114984209303878570, guid: 4c8b263ee06f42f4b80ceab9c5141ac3, type: 2}
+  mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
   mText: 'QUEST #R83jrew5'
   mFontSize: 55
   mFontStyle: 0
@@ -7975,11 +8005,11 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3001
+  startingRenderQueue: 3003
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
-  mClipRange: {x: 0, y: -42, z: 720, w: 718.1}
+  mClipRange: {x: 0, y: -42, z: 720, w: 894}
   mClipSoftness: {x: 4, y: 4}
   mDepth: 1
   mSortingOrder: 0
@@ -8141,7 +8171,7 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 114762722997501636, guid: aed7fe562d0d48446b70a276ce8b6301, type: 2}
+  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Flat
   mFillCenter: 1
 --- !u!114 &114538775180719456
@@ -8519,6 +8549,7 @@ MonoBehaviour:
   - {fileID: 1839585222136184}
   uiTable: {fileID: 114973115525636108}
   button: {fileID: 1734686193346366}
+  tfc: {fileID: 114779247147833394}
   testNum: 4
 --- !u!114 &114570570312145188
 MonoBehaviour:
@@ -8775,7 +8806,7 @@ MonoBehaviour:
   _TweenTarget: {fileID: 1060534842615132}
   _CallOption: 0
   onFinished:
-    mTarget: {fileID: 114558592605769958}
+    mTarget: {fileID: 0}
     mMethodName: 
     mParameters: []
     oneShot: 0
@@ -10318,6 +10349,49 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Button X
   mFillCenter: 1
+--- !u!114 &114779247147833394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1280847079655688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31cde6b0e7af97e46bbab3d09ca4b0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allSprites:
+  - {fileID: 114469404151353644}
+  - {fileID: 114542843382466324}
+  - {fileID: 114731249483955856}
+  - {fileID: 114454687048672824}
+  - {fileID: 114182607130107250}
+  - {fileID: 114884110921239070}
+  - {fileID: 114929909380415230}
+  - {fileID: 114616206720578032}
+  - {fileID: 114227295703138552}
+  - {fileID: 114167799910525596}
+  - {fileID: 114124648587693386}
+  - {fileID: 114681944673253646}
+  - {fileID: 114210622279518888}
+  - {fileID: 114291507386419574}
+  - {fileID: 114840701696790172}
+  - {fileID: 114105275403084656}
+  - {fileID: 114360411678289010}
+  - {fileID: 114266602359451168}
+  - {fileID: 114732070243745274}
+  allTexts:
+  - {fileID: 114015847824188852}
+  - {fileID: 114801364867401172}
+  trophyPos:
+  - {fileID: 114812380606019126}
+  - {fileID: 114601390448163898}
+  - {fileID: 114428729326446996}
+  - {fileID: 114753520936081466}
+  - {fileID: 114780366350890146}
+  - {fileID: 114892589357194430}
+  - {fileID: 114780373941998534}
+  - {fileID: 114923494383159428}
 --- !u!114 &114780366350890146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11053,8 +11127,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 114611331181732308, guid: 3741ec2653027b6438999d8f33ced92c, type: 2}
-  mSpriteName: monster_thumb_10
+  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
+  mSpriteName: Orc Armor - Shoulders
   mFillCenter: 1
 --- !u!114 &114902274466884174
 MonoBehaviour:
