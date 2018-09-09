@@ -11,9 +11,10 @@ public class HunterListManager : MonoBehaviour
     public TrophyCheckAction TrophyObj;
 
     private List<HunterQuestState> questList;
-    private UIGrid grid;
+    public UIGrid grid;
     
     private bool isHaveHunting;
+    int currentNum = 0;
 
     private void Awake()
     {
@@ -52,8 +53,19 @@ public class HunterListManager : MonoBehaviour
             AddOnClickEvent(this, temp.trophyCheckBtn, "ShowTrophy");
             questList.Add(temp);
         }
+        currentNum = questList.Count;
 
         grid.Reposition();
+    }
+
+    public void AddQuestList(Quest quest)
+    {
+        GlobalDdataManager.QuestProgressList.Add(quest);
+        isHaveHunting = true;
+        HunterQuestState temp = GameObject.Instantiate(listItemPrefab, this.transform).GetComponent<HunterQuestState>();
+        SettingQuestState(temp, questList.Count);
+        AddOnClickEvent(this, temp.trophyCheckBtn, "ShowTrophy");
+        questList.Add(temp);
     }
 
     public void RemoveQuestList(int index)
@@ -64,9 +76,9 @@ public class HunterListManager : MonoBehaviour
 
     private void Update()
     {
-        for(int i = questList.Count - 1; i >= 0; i--)
+        for(int i = GlobalDdataManager.QuestProgressList.Count - 1; i >= 0; i--)
         {
-            if(questList[i].isOver)
+            if(GlobalDdataManager.QuestProgressList[i].PeriodTime > 0)
             {
                 isHaveHunting = true;
                 break;
@@ -84,6 +96,35 @@ public class HunterListManager : MonoBehaviour
         {
             HunterProgress.SetActive(false);
         }
+
+        if(GlobalDdataManager.QuestProgressList.Count != currentNum)
+        {
+            for (int i = 0; i < GlobalDdataManager.QuestProgressList.Count; i++)
+            {
+                if (GlobalDdataManager.QuestProgressList[i].PeriodTime > 0)
+                    continue;
+
+                HunterQuestState temp = GameObject.Instantiate(listItemPrefab, this.transform).GetComponent<HunterQuestState>();
+                SettingQuestState(temp, i);
+                AddOnClickEvent(this, temp.trophyCheckBtn, "ShowTrophy");
+                questList.Add(temp);
+            }
+
+            for (int i = GlobalDdataManager.QuestProgressList.Count - 1; i >= 0; i--)
+            {
+                if (GlobalDdataManager.QuestProgressList[i].PeriodTime <= 0)
+                    continue;
+
+                isHaveHunting = true;
+                HunterQuestState temp = GameObject.Instantiate(listItemPrefab, this.transform).GetComponent<HunterQuestState>();
+                SettingQuestState(temp, i);
+                AddOnClickEvent(this, temp.trophyCheckBtn, "ShowTrophy");
+                questList.Add(temp);
+            }
+            currentNum = questList.Count;
+
+            grid.Reposition();
+        }
     }
     private void SettingQuestState(HunterQuestState src, int index)
     {
@@ -97,6 +138,7 @@ public class HunterListManager : MonoBehaviour
     public void ShowTrophy()
     {
         EasyManager.Instance.GetObj("GameManager").GetComponent<GameManager>().ActivatePanelCollider(false);
+
         TrophyObj.gameObject.SetActive(true);
     }
 

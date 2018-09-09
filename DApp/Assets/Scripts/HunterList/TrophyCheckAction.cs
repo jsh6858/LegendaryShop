@@ -20,7 +20,9 @@ public class TrophyCheckAction : MonoBehaviour
     public UITable uiTable;
     public GameObject button;
 
-    public TrophyForConfirm tfc;
+    [Space]
+    public UILabel questName, monsterName;
+    public UISprite monsterImg;
 
     public int testNum;
 
@@ -35,6 +37,7 @@ public class TrophyCheckAction : MonoBehaviour
         basic_1_pos = basicTrophyObj[0].transform.position;
         basic_2_pos = basicTrophyObj[1].transform.position;
     }
+
     private void OnEnable()
     {
         myTopGuiTweenPos.TweenStart();
@@ -52,7 +55,7 @@ public class TrophyCheckAction : MonoBehaviour
 
         basicTrophyObj[0].transform.position = basic_1_pos;
         basicTrophyObj[1].transform.position = basic_2_pos;
-
+        
         StartCoroutine(CoOpen());
     }
 
@@ -74,6 +77,7 @@ public class TrophyCheckAction : MonoBehaviour
             oMarks[i].SetActive(false);
 
         button.SetActive(false);
+        EasyManager.Instance.GetObj("GameManager").GetComponent<GameManager>().ActivatePanelCollider(true);
     }
 
     public void TrophyMove()

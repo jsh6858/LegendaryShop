@@ -17,10 +17,14 @@ public class Tab2Manager : MonoBehaviour {
 
     void Awake()
     {
-        myPage.SetActive(true);
+        myPage.SetActive(false);
         fader.fadeOutSpeed = 5f;
 
         fader.onFadeOutComplete = () => { Debug.Log("FadeOut Complete"); fader.QuickSetFadeIn(); };
+
+        GameObject obj = Resources.Load("HunterList/HunterList") as GameObject;
+
+        _objHunter = GameObject.Instantiate(obj, Vector3.zero, Quaternion.identity, myPage.transform);
     }
 
     public void Init()
