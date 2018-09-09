@@ -46,10 +46,11 @@ public class Item_List : MonoBehaviour {
         }
     }
 
-    public void Set_ItemInfo(string name, float percentage = 70f)
+    public void Set_ItemInfo(string name, int unLock = 0, float percentage = 70f)
     {
         _ItemName.text = name;
-        
+
+        _UnlockCondition.text = unLock.ToString();
         _Percentage.text = string.Format("{0:#.##}", Random.Range(60f, 99f));
     }
 
@@ -67,29 +68,21 @@ public class Item_List : MonoBehaviour {
         }
     }
 
-    public void Select_Item(bool b = false)
+    public void Select_Item(bool b)
     {
-        if(b == true) // 무조건 true로
+        _bSelected = b;
+
+        if (b == true) // 무조건 true로
         {
-            _bSelected = b;
-
-            Debug.Log("Item Selcted : " + gameObject.name);
-            //_sprImage.spriteName = "Select!";
-
+            Debug.Log("아이템 선택! : " + gameObject.name);
+            _sprImage.spriteName = "layer_item_03";
+        
             return;
-        }
-
-        if (!_bSelected)
-        {
-            Debug.Log("Item Selcted : " + gameObject.name);
-            //_sprImage.spriteName = "Select!";
         }
         else
         {
-            Debug.Log("Item DeSelcted : " + gameObject.name);
-            //_sprImage.spriteName = "UnSelect!";
+            Debug.Log("아이템 선택 끔 : " + gameObject.name);
+            _sprImage.spriteName = "";
         }
-
-        _bSelected = !_bSelected;
     }
 }

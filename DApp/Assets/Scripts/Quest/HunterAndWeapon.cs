@@ -56,8 +56,8 @@ public class HunterAndWeapon : MonoBehaviour {
 
     public void Set_Weapon(Weapon weapon)
     {
-        _WpLevel.text = Random.Range(50, 99).ToString();
-        _Percentage.text = string.Format("{0:#.##}", Random.Range(60f, 99f));
+        _WpLevel.text = "Lv " + Random.Range(50, 99);
+        _Percentage.text = string.Format("({0:#})%", Random.Range(60f, 99f));
         _WpPower.text = weapon.Power.ToString();
         //_SprWeapon.spriteName = weapon.ThumbImageId.ToString();
         //_SprBestChoice = weapon.

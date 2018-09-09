@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1847584806315124}
+  m_IsPrefabAsset: 1
+--- !u!1 &1847584806315124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4047994897940070}
+  - component: {fileID: 114071857027530090}
+  m_Layer: 0
+  m_Name: Item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4047994897940070
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1847584806315124}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114071857027530090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1847584806315124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: bef338dd4b592c444b3cab9a5acd2757, type: 2}
+  mSprites:
+  - name: item_thumb_01
+    x: 0
+    y: 531
+    width: 791
+    height: 870
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 190
+    paddingRight: 190
+    paddingTop: 155
+    paddingBottom: 146
+  - name: item_thumb_11
+    x: 792
+    y: 812
+    width: 1021
+    height: 589
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 100
+    paddingRight: 50
+    paddingTop: 287
+    paddingBottom: 295
+  - name: item_thumb_21
+    x: 1814
+    y: 180
+    width: 1046
+    height: 866
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 58
+    paddingRight: 67
+    paddingTop: 153
+    paddingBottom: 152
+  - name: item_thumb_31
+    x: 0
+    y: 1402
+    width: 878
+    height: 646
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 138
+    paddingRight: 155
+    paddingTop: 243
+    paddingBottom: 282
+  - name: item_thumb_41
+    x: 1814
+    y: 1047
+    width: 856
+    height: 1001
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 110
+    paddingRight: 205
+    paddingTop: 85
+    paddingBottom: 85
+  - name: item_thumb_51
+    x: 792
+    y: 121
+    width: 722
+    height: 690
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 154
+    paddingRight: 154
+    paddingTop: 127
+    paddingBottom: 126
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []

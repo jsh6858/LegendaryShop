@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1259397345828236}
+  m_IsPrefabAsset: 1
+--- !u!1 &1259397345828236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4734765167145026}
+  - component: {fileID: 114088940071731468}
+  m_Layer: 0
+  m_Name: New Atlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4734765167145026
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1259397345828236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114088940071731468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1259397345828236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 06a6e344340c7674bbe74099d6280bc2, type: 2}
+  mSprites:
+  - name: weapon_thumb_00
+    x: 1699
+    y: 1143
+    width: 1026
+    height: 1006
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 85
+    paddingRight: 60
+    paddingTop: 103
+    paddingBottom: 62
+  - name: weapon_thumb_01
+    x: 2066
+    y: 3155
+    width: 1014
+    height: 941
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 73
+    paddingRight: 84
+    paddingTop: 104
+    paddingBottom: 126
+  - name: weapon_thumb_10
+    x: 2066
+    y: 2150
+    width: 759
+    height: 1004
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 290
+    paddingRight: 122
+    paddingTop: 84
+    paddingBottom: 83
+  - name: weapon_thumb_11
+    x: 911
+    y: 2006
+    width: 787
+    height: 1011
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 256
+    paddingRight: 128
+    paddingTop: 100
+    paddingBottom: 60
+  - name: weapon_thumb_20
+    x: 3081
+    y: 3012
+    width: 1010
+    height: 1084
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 20
+    paddingRight: 141
+    paddingTop: 65
+    paddingBottom: 22
+  - name: weapon_thumb_21
+    x: 1005
+    y: 3018
+    width: 1060
+    height: 1078
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 9
+    paddingRight: 102
+    paddingTop: 65
+    paddingBottom: 28
+  - name: weapon_thumb_30
+    x: 0
+    y: 3109
+    width: 1004
+    height: 987
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 108
+    paddingRight: 59
+    paddingTop: 123
+    paddingBottom: 61
+  - name: weapon_thumb_31
+    x: 2826
+    y: 2083
+    width: 1022
+    height: 928
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 9
+    paddingRight: 140
+    paddingTop: 134
+    paddingBottom: 109
+  - name: weapon_thumb_40
+    x: 2726
+    y: 1150
+    width: 997
+    height: 932
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 87
+    paddingRight: 87
+    paddingTop: 120
+    paddingBottom: 119
+  - name: weapon_thumb_41
+    x: 0
+    y: 2168
+    width: 910
+    height: 940
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 97
+    paddingRight: 164
+    paddingTop: 55
+    paddingBottom: 176
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []

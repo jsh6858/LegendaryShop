@@ -16,6 +16,8 @@ public class Contract_Info : MonoBehaviour {
     public float _fRemainingTime = 0f;
     public bool _bActivate;
 
+    public float _fNextMeetingTime = 0f;
+
     // Active
     public UISprite _sprMon;
     public UISprite _sprHun1;
@@ -45,7 +47,7 @@ public class Contract_Info : MonoBehaviour {
         iPartyMember = GlobalDdataManager.PartyList[_myQuest.MyParty].PartyMembers[2];
         //_sprHun1.spriteName = GlobalDdataManager.HunterList[iPartyMember].SDImageId;
 
-        _fMaxTime = _fRemainingTime = Random.Range(60f, 80f);
+        _fNextMeetingTime = Random.Range(60f, 120f);
     }
 
     void Start()
@@ -55,7 +57,7 @@ public class Contract_Info : MonoBehaviour {
 
         _trContracPage = transform.parent.GetComponent<Contract_Page>();
 
-        _fMaxTime = _fRemainingTime = Random.Range(60f, 120f);
+        _fNextMeetingTime = Random.Range(60f, 120f);
 
         _bActivate = transform.Find("Active").gameObject.activeSelf;
     }
@@ -65,11 +67,20 @@ public class Contract_Info : MonoBehaviour {
         if (true == _bActivate)
         {
             _slider.value = _fRemainingTime / _fMaxTime;
-            _fRemainingTime -= Time.deltaTime * 20f;
+            _fRemainingTime -= Time.deltaTime;
 
             _AcitveTime.text = UsefulFunction.TimeToString(_fRemainingTime);
 
             if (_fRemainingTime < 0f)
+                Set_NewContract();
+        }
+        else
+        {
+            _fNextMeetingTime -= Time.deltaTime;
+
+            _UnAcitveTime.text = UsefulFunction.TimeToString(_fNextMeetingTime);
+
+            if (_fNextMeetingTime < 0f)
                 Set_NewContract();
         }
     }
