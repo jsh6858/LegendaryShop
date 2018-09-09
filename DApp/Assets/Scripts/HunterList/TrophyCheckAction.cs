@@ -28,6 +28,7 @@ public class TrophyCheckAction : MonoBehaviour
     private bool isOpenStart;
     private List<int> indexs;
     private Vector3 basic_1_pos, basic_2_pos;
+    bool isTouch = false;
 
     private void Awake()
     {
@@ -145,7 +146,16 @@ public class TrophyCheckAction : MonoBehaviour
         }
 
     }
-    
+    private void Update()
+    {
+        if(Input.touchCount > 0)
+        {
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                isTouch = true;
+            }
+        }
+    }
     private IEnumerator CoOpen()
     {
         while (!isOpenStart)
@@ -155,6 +165,7 @@ public class TrophyCheckAction : MonoBehaviour
         int index = 0;
         bool isNotOpen = true;
         float time = 0f;
+        
 
         while(openCount != 0)
         {
@@ -162,6 +173,11 @@ public class TrophyCheckAction : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                     isNotOpen = false;
+                else if(isTouch)
+                {
+                    isNotOpen = false;
+                    isTouch = false;
+                }
                 yield return null;
             }
 
@@ -173,6 +189,13 @@ public class TrophyCheckAction : MonoBehaviour
                 {
                     myTrophyTweenScales[index].ResetTween();
                     break;
+                }
+                else if (isTouch)
+                {
+                    isTouch = false;
+                    myTrophyTweenScales[index].ResetTween();
+                    break;
+                    
                 }
                 yield return null;
             }

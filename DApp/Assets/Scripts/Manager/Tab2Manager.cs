@@ -6,25 +6,26 @@ public class Tab2Manager : MonoBehaviour {
 
     public bool isActive = false;
     public GameObject myPage;
+    public GameObject listItemPrefab;
+    public int testNum;
+
+    public HunterListManager listManager;
 
     GameObject _objHunter;
     public ScreenFader fader;
+    UIScrollView view;
 
     void Awake()
     {
-        myPage.SetActive(false);
+        myPage.SetActive(true);
         fader.fadeOutSpeed = 5f;
 
         fader.onFadeOutComplete = () => { Debug.Log("FadeOut Complete"); fader.QuickSetFadeIn(); };
     }
 
-    void Update()
+    public void Init()
     {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            // 입력을 막음
-            StartCoroutine(fader.FadeOut());
-        }
+        listManager.Init();
     }
     
 
