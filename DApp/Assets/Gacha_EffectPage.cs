@@ -21,6 +21,7 @@ public class Gacha_EffectPage : MonoBehaviour {
     int idx = 0;
     float fWhiteTime = 0f;
     float fWhiteSize = 1f;
+    float fAutoTime = 0f;
 
     private void Awake()
     {
@@ -86,8 +87,76 @@ public class Gacha_EffectPage : MonoBehaviour {
             }
         }
 
-        if(Input.GetMouseButtonDown(0))
+
+        if (4 == idx)
         {
+            fWhiteTime += Time.deltaTime;
+
+            fWhiteSize += 10f * Time.deltaTime;
+            Sprite_White.transform.localScale = new Vector3(fWhiteSize, fWhiteSize, fWhiteSize);
+
+            if (0.8f < fWhiteTime)
+                idx = 5;
+        }
+        else if (5 == idx)
+        {
+            int rand = Random.Range(0, 88);
+            Weapon w = GlobalDdataManager.WeaponList[rand];
+
+            GlobalDdataManager.MyWeaponList.Add(w);
+
+            Result.SetActive(true);
+            Result.transform.Find("Label_Type").GetComponent<UILabel>().text = w.Type.ToString();
+            Result.transform.Find("Label_Name").GetComponent<UILabel>().text = w.Name;
+            Result.transform.Find("Label_Power").GetComponent<UILabel>().text = "Power : " + w.Power.ToString();
+            Result.transform.Find("Label_Property").GetComponent<UILabel>().text = w.Property;
+            Result.transform.Find("Label_Special1").GetComponent<UILabel>().text = w.Special_Ability_1;
+            Result.transform.Find("Label_Special2").GetComponent<UILabel>().text = w.Special_Ability_2;
+
+            idx = 6;
+        }
+        else if (4 > idx)
+        {
+            fAutoTime += Time.deltaTime;
+            if (0.5f < fAutoTime)
+            {
+                fAutoTime = 0f;
+
+                switch (idx)
+                {
+                    case 0:
+                        sprite_brk.SetActive(true);
+                        idx = 1;
+                        break;
+
+                    case 1:
+                        sprite_brk.GetComponent<UISprite>().spriteName = "eft_brk_02";
+                        sprite_brk.GetComponent<UISprite>().width = 189;
+                        sprite_brk.GetComponent<UISprite>().height = 206;
+                        idx = 2;
+                        break;
+
+                    case 2:
+                        sprite_brk.GetComponent<UISprite>().spriteName = "eft_brk_03";
+                        sprite_brk.GetComponent<UISprite>().width = 218;
+                        sprite_brk.GetComponent<UISprite>().height = 221;
+                        idx = 3;
+                        break;
+
+                    case 3:
+                        Sprite_White.SetActive(true);
+                        idx = 4;
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            fAutoTime = 0f;
             if(0 == idx)
             {
                 sprite_brk.SetActive(true);
@@ -113,35 +182,11 @@ public class Gacha_EffectPage : MonoBehaviour {
                 idx = 4;
             }
         }
-
-        if(4 == idx)
-        {
-            fWhiteTime += Time.deltaTime;
-
-            fWhiteSize += 2f * Time.deltaTime;
-            Sprite_White.transform.localScale = new Vector3(fWhiteSize, fWhiteSize, fWhiteSize);
-
-            if (2.5f < fWhiteTime)
-                idx = 5;
-        }
-        else if(5 == idx)
-        {
-            int rand = Random.RandomRange(0, 88);
-            Weapon w = GlobalDdataManager.WeaponList[rand];
-
-            GlobalDdataManager.MyWeaponList.Add(w);
-            
-            Result.SetActive(true);
-            Result.transform.Find("Label_Type").GetComponent<UILabel>().text = w.Type.ToString();
-            Result.transform.Find("Label_Name").GetComponent<UILabel>().text = w.Name;
-            Result.transform.Find("Label_Power").GetComponent<UILabel>().text = w.Power.ToString();
-
-            idx = 6;
-        }
 	}
 
     public void Close()
     {
+        GameObject.Find("Gacha_Page(Clone)").GetComponent<Gacha_Page>().making = false;
         EasyManager.Instance.GetObj("GameManager").GetComponent<GameManager>().Close_PopUp();
     }
 }

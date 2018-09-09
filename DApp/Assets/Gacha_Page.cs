@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Gacha_Page : MonoBehaviour {
 
+    public bool making = false;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,6 +18,10 @@ public class Gacha_Page : MonoBehaviour {
 
     public void Push_ShowMakeWeapon()
     {
-        GameObject.Find("GameManager").GetComponent<GameManager>().Push_ShowMakeWeapon();
+        if (!making)
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().Push_ShowMakeWeapon();
+            making = true;
+        }
     }
 }

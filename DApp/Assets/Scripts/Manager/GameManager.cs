@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
         bottomBTNs[2] = GameObject.Find("GachaList").transform;
         
         client = new LegendaryClient();
-        //_ConnectToLoomNetwork();
+        _ConnectToLoomNetwork();
         
         _LoadData();
 
@@ -58,12 +58,47 @@ public class GameManager : MonoBehaviour
         {
             client.f3_press();
         }
+        if (Input.GetKeyDown(KeyCode.F5))
+        {
+            client.f5_press();
+        }
+        if (Input.GetKeyDown(KeyCode.F6))
+        {
+            client.f6_press();
+        }
     }
 
     private void _ConnectToLoomNetwork()
     {
         client.SignIn("172.30.1.34");
         //client.SignIn("127.0.0.1");
+
+        // showQuest , slotid(0 ~ 11) -> reportQuest (해당 슬롯의 정보)
+        // createQuest , qid / time -> newQuest ( qid / slotid / log )
+        // startQuest , slotid -> startQuest ( slotid / endTime )
+        // resultQuest , slotid -> resultQuest ( status, slotid, qid, remainTime )
+        // deleteQuest , slotid -> deleteQuest ( success, slotid )
+
+    }
+    public void ShowQuest(int slotId)
+    {
+        client.ShowQuest(slotId);
+    }
+    public void CreateQuest(int questId, int time)
+    {
+        client.CreateQuest(questId, time);
+    }
+    public void StartQuest(int slotId)
+    {
+        client.StartQuest(slotId);
+    }
+    public void ResultQuest(int slotId)
+    {
+        client.ResultQuest(slotId);
+    }
+    public void DeleteQuest(int slotId)
+    {
+        client.DeleteQuest(slotId);
     }
 
     private void _GetPlayerName()
@@ -225,6 +260,7 @@ public class GameManager : MonoBehaviour
         {
             string s = sr.ReadLine();
             string[] temp = s.Split(',');
+            temp[6] = temp[6].Replace('/', ',');
             Weapon w = new Weapon(Int32.Parse(temp[0]), temp[1], temp[2], Int32.Parse(temp[3])
                 , (WEAPON_TYPE)Int32.Parse(temp[4]), (WEAPON_GRADE)Int32.Parse(temp[5]), temp[6], temp[7], temp[8]);
             GlobalDdataManager.WeaponList.Add(w);
