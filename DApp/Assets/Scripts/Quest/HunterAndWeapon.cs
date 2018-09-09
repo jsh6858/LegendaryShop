@@ -18,6 +18,7 @@ public class HunterAndWeapon : MonoBehaviour {
     public UILabel _Percentage;
     public UILabel _WpPower;
     public UISprite _SprWeapon;
+    public UISprite _SprWeaponFrame;
     public UISprite _SprBestChoice;
 
     GameObject _objSelect;
@@ -60,6 +61,7 @@ public class HunterAndWeapon : MonoBehaviour {
         _Percentage.text = string.Format("({0:#})%", Random.Range(60f, 99f));
         _WpPower.text = weapon.Power.ToString();
         _SprWeapon.spriteName = weapon.ThumbImageId.ToString();
+        _SprWeaponFrame.spriteName = "weapon_grade_frame_" + (int)weapon.Grade;
         //_SprBestChoice = weapon.
     }
 
