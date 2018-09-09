@@ -211,7 +211,8 @@ public class QuestManager : MonoBehaviour {
         }
         EasyManager.Instance._curContract._myQuest.Trophy_Checked = bItem;
 
-        LegendFramework.GlobalDdataManager.QuestProgressList.Add(EasyManager.Instance._curContract._myQuest);
+        GlobalDdataManager.QuestProgressList.Add(EasyManager.Instance._curContract._myQuest);
+       // _GameManager.StartQuest()
     }
 
     public void Push_AddWeapon(GameObject obj)

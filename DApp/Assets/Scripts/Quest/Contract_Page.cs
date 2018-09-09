@@ -12,7 +12,10 @@ public class Contract_Page : MonoBehaviour
         get
         {
             if (null == GameManager)
+            {
                 GameManager = EasyManager.Instance.GetObj("GameManager").GetComponent<GameManager>();
+            }
+                
 
             return GameManager;
         }
@@ -45,6 +48,11 @@ public class Contract_Page : MonoBehaviour
                 return;
             }
         }
+    }
+
+    private void OnEnable()
+    {
+       // _GameManager.ResultQuest(0);
     }
 
     public void Refresh_ActiveTime(GameObject obj)

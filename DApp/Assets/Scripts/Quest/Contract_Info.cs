@@ -57,7 +57,7 @@ public class Contract_Info : MonoBehaviour {
 
         _trContracPage = transform.parent.GetComponent<Contract_Page>();
 
-        _fNextMeetingTime = Random.Range(60f, 120f);
+        _fNextMeetingTime = Random.Range(10f, 40f);
 
         _bActivate = transform.Find("Active").gameObject.activeSelf;
     }
@@ -90,7 +90,10 @@ public class Contract_Info : MonoBehaviour {
         Activate(true);
 
         int iMax = GlobalDdataManager.QuestList.Count;
-        Quest rand_quest = GlobalDdataManager.QuestList[Random.Range(0, iMax - 1)];
+        Quest rand_quest = GlobalDdataManager.QuestList[Random.Range(1, iMax - 1)];
+        
+        EasyManager.Instance.GetObj("GameManager").GetComponent<GameManager>().CreateQuest
+        (Random.Range(0, iMax - 1), rand_quest.PeriodTime);
 
         Set_ContractInfo(rand_quest);
     }

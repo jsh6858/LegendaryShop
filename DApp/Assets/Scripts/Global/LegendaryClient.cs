@@ -81,37 +81,37 @@ namespace LegendFramework
             if ("NewUser" == e.EventName)
             {
                 newUserEvent result = e.DecodeEventDto<newUserEvent>();
-                Debug.Log("NewUser result: " + result.state + ":" + result.title);
+                Debug.Log("<color=yellow> NewUser result: </color>" + result.state + ":" + result.title);
             }
             else if ("NewQuest" == e.EventName)
             {
                 // CreateQuest 리퀘스트 시 응답
                 newQuestEvent result = e.DecodeEventDto<newQuestEvent>();
-                Debug.Log("NewQuest result: " + result.success + ":" + result.qid + ":" + result.questSlotId + ":" + result.reason);
+                Debug.Log("<color=yellow> NewQuest result: </color>" + result.success + ":" + result.qid + ":" + result.questSlotId + ":" + result.reason);
             }
             else if ("StartQuest" == e.EventName)
             {
                 // StartQuest 리퀘스트 시 응답
                 startQuestEvent result = e.DecodeEventDto<startQuestEvent>();
-                Debug.Log("StartQuest result: " + result.questSlotId + ":" + result.endTime);
+                Debug.Log("<color=yellow StartQuest result: </ color > " + result.questSlotId + ":" + result.endTime);
             }
             else if ("ResultQuest" == e.EventName)
             {
                 // ResultQuest 리퀘스트 시 응답
                 resultQuestEvent result = e.DecodeEventDto<resultQuestEvent>();
-                Debug.Log("ResultQuest result: " + result.status + ":" + result.questSlotId + ":" + result.qid + ":" + result.remainTime);
+                Debug.Log("<color=yellow> ResultQuest result: </color>" + result.status + ":" + result.questSlotId + ":" + result.qid + ":" + result.remainTime);
             }
             else if ("DeleteQuest" == e.EventName)
             {
                 // DeleteQuest 리퀘스트 시 응답
                 deleteQuestEvent result = e.DecodeEventDto<deleteQuestEvent>();
-                Debug.Log("ResultQuest result: " + result.success + ":" + result.questSlotId);
+                Debug.Log("<color=yellow> ResultQuest result: </color>" + result.success + ":" + result.questSlotId);
             }
             else if ("ReportQuest" == e.EventName)
             {
                 // ShowQuest 리퀘스트 시 응답하
                 reportQuestEvent result = e.DecodeEventDto<reportQuestEvent>();
-                Debug.Log("ReportQuest result: " + result.idx + ":" + result.isReady + ":" + result.isRunning + ":" + result.qid + ":" + result.periodTime + ":" + result.endTime);
+                Debug.Log("<color=yellow> ReportQuest result: </color>" + result.idx + ":" + result.isReady + ":" + result.isRunning + ":" + result.qid + ":" + result.periodTime + ":" + result.endTime);
             }
             else
                 Debug.Log(e.EventName);
