@@ -19,6 +19,14 @@ public class Item_Weapon : MonoBehaviour {
     public void Click()
     {
         window.selectedWeapon = weapon;
-        detailView.transform.Find("Label_WeaponName").GetComponent<UILabel>().text = weapon.Name;
+
+        int rank_int = (int)weapon.Grade;
+        string rank = "Rank" + rank_int;
+
+        detailView.transform.Find("Sprite_Icon").GetComponent<UISprite>().spriteName = weapon.ThumbImageId;
+        detailView.transform.Find("Label_Name").GetComponent<UILabel>().text = weapon.Name;
+        detailView.transform.Find("Label_Property").GetComponent<UILabel>().text =
+            weapon.Property + "\r\n" + weapon.Special_Ability_1 + "\r\n" + weapon.Special_Ability_2;
+        detailView.transform.Find("Label_Rank").GetComponent<UILabel>().text = rank;
     }
 }
