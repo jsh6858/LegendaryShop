@@ -260,6 +260,8 @@ namespace LegendFramework
         public int Trophy_Count_Possible;
         public int Trophy_Count_Selected;
         public bool[] Trophy_Checked;
+
+        public int SlotId;
         
         public Quest(int _no, string _title, int _periodTime, int _party, int _monster
             , int[] _normalTrophy, int[] _randomTrophy)
@@ -278,6 +280,10 @@ namespace LegendFramework
             Trophy_Checked = new bool[] { true, true, false, false, false, false };
         }
 
+        public void SetSlotId(int _slotId)
+        {
+            SlotId = _slotId;
+        }
         public void SetPeriodTime()
         {
             --PeriodTime;
