@@ -53,11 +53,180 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 74ca51555b420f14da99888ed958464e, type: 2}
   mSprites:
+  - name: bk_01
+    x: 0
+    y: 742
+    width: 720
+    height: 339
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: bk_02
+    x: 721
+    y: 428
+    width: 720
+    height: 339
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: bk_03
+    x: 0
+    y: 402
+    width: 720
+    height: 339
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: bk_layer
+    x: 1089
+    y: 768
+    width: 720
+    height: 1280
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_bottom_page_01_1
+    x: 721
+    y: 901
+    width: 255
+    height: 180
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 4
+    paddingBottom: 0
+  - name: btn_bottom_page_01_2
+    x: 721
+    y: 789
+    width: 255
+    height: 111
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 73
+    paddingBottom: 0
+  - name: btn_bottom_page_02_1
+    x: 1442
+    y: 587
+    width: 247
+    height: 180
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 5
+    paddingBottom: 0
+  - name: btn_bottom_page_02_2
+    x: 1690
+    y: 663
+    width: 247
+    height: 104
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 81
+    paddingBottom: 0
+  - name: btn_bottom_page_03_1
+    x: 1690
+    y: 483
+    width: 254
+    height: 179
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_bottom_page_03_2
+    x: 1442
+    y: 375
+    width: 254
+    height: 107
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 72
+    paddingBottom: 0
+  - name: btn_item
+    x: 1929
+    y: 363
+    width: 118
+    height: 119
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 2
+    paddingTop: 2
+    paddingBottom: 2
+  - name: btn_weapon
+    x: 1810
+    y: 1929
+    width: 119
+    height: 119
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 2
+    paddingTop: 2
+    paddingBottom: 2
   - name: image
     x: 0
-    y: 58
+    y: 1082
     width: 1088
     height: 966
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: top_title
+    x: 1697
+    y: 319
+    width: 231
+    height: 163
     borderLeft: 0
     borderRight: 0
     borderTop: 0
