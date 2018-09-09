@@ -711,7 +711,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 8.571428
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: Weapon Text
   mFontSize: 40
@@ -886,7 +886,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3003
+  startingRenderQueue: 3002
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -990,7 +990,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 8.571428
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: Weapon Power
   mFontSize: 45
@@ -1166,7 +1166,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4.6153846
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: Weapon Name
   mFontSize: 60
@@ -1317,7 +1317,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 'Weapon Property
 
@@ -1452,7 +1452,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 7.5
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 'Weapon Power
 
@@ -1522,7 +1522,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 7.5
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: 4f679cb290739ee4b8788b48fa8e8c4a, type: 3}
   mFont: {fileID: 0}
   mText: 'Weapon Power
 
