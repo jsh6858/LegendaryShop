@@ -203,7 +203,6 @@ GameObject:
   m_Component:
   - component: {fileID: 116480847}
   - component: {fileID: 116480850}
-  - component: {fileID: 116480849}
   - component: {fileID: 116480848}
   m_Layer: 9
   m_Name: Button
@@ -241,35 +240,6 @@ MonoBehaviour:
   trigger: 0
   volume: 1
   pitch: 1
---- !u!114 &116480849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 116480846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 1269005216}
-  hover: {r: 0.88235295, g: 0.78431374, b: 0.5882353, a: 1}
-  pressed: {r: 0.7176471, g: 0.6392157, b: 0.48235294, a: 1}
-  disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  duration: 0.2
-  dragHighlight: 0
-  hoverSprite: 
-  pressedSprite: 
-  disabledSprite: 
-  hoverSprite2D: {fileID: 0}
-  pressedSprite2D: {fileID: 0}
-  disabledSprite2D: {fileID: 0}
-  pixelSnap: 0
-  onClick:
-  - mTarget: {fileID: 417280422}
-    mMethodName: Push_PlayToTitle
-    mParameters: []
-    oneShot: 0
 --- !u!65 &116480850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -293,9 +263,6 @@ GameObject:
   - component: {fileID: 257843347}
   - component: {fileID: 257843346}
   - component: {fileID: 257843345}
-  - component: {fileID: 257843349}
-  - component: {fileID: 257843348}
-  - component: {fileID: 257843350}
   m_Layer: 9
   m_Name: Camera
   m_TagString: Untagged
@@ -410,39 +377,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &257843348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 257843343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f52161bba2f74a4d9260c4fc3a043b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &257843349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 257843343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f52161bba2f74a4d9260c4fc3a043b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &257843350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 257843343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6858ada374a33c949980724bf92057e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &309277650
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,9 +385,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 309277651}
-  - component: {fileID: 309277654}
-  - component: {fileID: 309277653}
-  - component: {fileID: 309277652}
   m_Layer: 9
   m_Name: PopUp
   m_TagString: Untagged
@@ -474,39 +405,6 @@ Transform:
   m_Father: {fileID: 257843344}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &309277652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 309277650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f52161bba2f74a4d9260c4fc3a043b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &309277653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 309277650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f52161bba2f74a4d9260c4fc3a043b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &309277654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 309277650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f52161bba2f74a4d9260c4fc3a043b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &342827353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,6 +2272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1912089697}
   - component: {fileID: 1912089698}
+  - component: {fileID: 1912089699}
   m_Layer: 0
   m_Name: Play
   m_TagString: Untagged
@@ -2410,6 +2309,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346f0b83e4588264ebba33406a47a9d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1912089699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912089696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae942c9068183dc40a9d01f648273726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  showInPanelTool: 1
+  generateNormals: 0
+  generateUV2: 0
+  shadowMode: 0
+  widgetsAreStatic: 0
+  cullWhileDragging: 1
+  alwaysOnScreen: 0
+  anchorOffset: 0
+  softBorderPadding: 1
+  renderQueue: 0
+  startingRenderQueue: 3000
+  mClipTexture: {fileID: 0}
+  mAlpha: 1
+  mClipping: 0
+  mClipRange: {x: 0, y: 0, z: 300, w: 200}
+  mClipSoftness: {x: 4, y: 4}
+  mDepth: 0
+  mSortingOrder: 0
+  mSortingLayerName: 
+  mClipOffset: {x: 0, y: 0}
+  useSortingOrder: 0
 --- !u!1 &2009389268
 GameObject:
   m_ObjectHideFlags: 0

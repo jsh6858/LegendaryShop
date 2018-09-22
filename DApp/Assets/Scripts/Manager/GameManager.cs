@@ -30,16 +30,16 @@ public class GameManager : MonoBehaviour
         bottomBTNs[0] = GameObject.Find("QuestList").transform;
         bottomBTNs[1] = GameObject.Find("HunterList").transform;
         bottomBTNs[2] = GameObject.Find("GachaList").transform;
-        
+
         client = new LegendaryClient();
-        _ConnectToLoomNetwork();
-        
+        //_ConnectToLoomNetwork();
+
         _LoadData();
 
         GlobalDdataManager.MyWeaponList = new List<Weapon>();
         GlobalDdataManager.MyItemList = new List<Item>();
 
-        for(int i = 0; i < 55; ++i)
+        for (int i = 0; i < 55; ++i)
         {
             int rand = UnityEngine.Random.RandomRange(0, 18);
             GlobalDdataManager.MyItemList.Add(GlobalDdataManager.ItemList[rand]);
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        for(int i = 0; i < GlobalDdataManager.QuestProgressList.Count; i++)
+        for (int i = 0; i < GlobalDdataManager.QuestProgressList.Count; i++)
         {
             GlobalDdataManager.QuestProgressList[i].SetPeriodTime();
         }
@@ -72,23 +72,23 @@ public class GameManager : MonoBehaviour
     }
     public void ShowQuest(int slotId)
     {
-        client.ShowQuest(slotId);
+        //client.ShowQuest(slotId);
     }
     public void CreateQuest(int questId, int time)
     {
-        client.CreateQuest(questId, time);
+        //client.CreateQuest(questId, time);
     }
     public void StartQuest(int slotId)
     {
-        client.StartQuest(slotId);
+        //client.StartQuest(slotId);
     }
     public void ResultQuest(int slotId)
     {
-        client.ResultQuest(slotId);
+        //client.ResultQuest(slotId);
     }
     public void DeleteQuest(int slotId)
     {
-        client.DeleteQuest(slotId);
+        //client.DeleteQuest(slotId);
     }
 
     private void _GetPlayerName()
@@ -145,10 +145,10 @@ public class GameManager : MonoBehaviour
     {
         if (_trPopup.childCount == 0)
             return;
-        
-         Transform child = _trPopup.GetChild(_trPopup.childCount - 1); //
 
-         Destroy(child.gameObject);
+        Transform child = _trPopup.GetChild(_trPopup.childCount - 1); //
+
+        Destroy(child.gameObject);
 
         ActivatePanelCollider(true);
     }
@@ -238,7 +238,13 @@ public class GameManager : MonoBehaviour
 
     private void _LoadData()
     {
-        string path = "Assets/Resources/Data/";
+        string path = null;
+#if UNITY_EDITOR
+        path = Application.dataPath + "/Resources/Data/";
+#elif UNITY_ANDROID
+        path = Application.persistentDataPath + "/Resources/Data/";
+#endif
+        Debug.Log(Application.persistentDataPath);
 
         GlobalDdataManager.HunterList = new List<Hunter>();
         GlobalDdataManager.WeaponList = new List<Weapon>();
@@ -249,22 +255,29 @@ public class GameManager : MonoBehaviour
         GlobalDdataManager.ItemList = new List<Item>();
         GlobalDdataManager.MonsterList = new List<Monster>();
 
-        StreamReader sr = new StreamReader(path + "Weapon.CSV", Encoding.GetEncoding("euc-kr"));
-        while (!sr.EndOfStream)
+        string s = null;
+
+        TextAsset _txtFile = (TextAsset)Resources.Load("Data/Weapon") as TextAsset;
+        s = _txtFile.text;
+        string[] temp2 = s.Split('\n');
+
+        for (int i = 0; i < temp2.Length - 1; ++i)
         {
-            string s = sr.ReadLine();
-            string[] temp = s.Split(',');
+            string[] temp = temp2[i].Split(',');
+
             temp[6] = temp[6].Replace('/', ',');
             Weapon w = new Weapon(Int32.Parse(temp[0]), temp[1], temp[2], Int32.Parse(temp[3])
                 , (WEAPON_TYPE)Int32.Parse(temp[4]), (WEAPON_GRADE)Int32.Parse(temp[5]), temp[6], temp[7], temp[8]);
             GlobalDdataManager.WeaponList.Add(w);
         }
 
-        sr = new StreamReader(path + "Quest.CSV", Encoding.GetEncoding("euc-kr"));
-        while (!sr.EndOfStream)
+        _txtFile = (TextAsset)Resources.Load("Data/Quest") as TextAsset;
+        s = _txtFile.text;
+        temp2 = s.Split('\n');
+
+        for (int j = 0; j < temp2.Length - 1; ++j)
         {
-            string s = sr.ReadLine();
-            string[] temp = s.Split(',');
+            string[] temp = temp2[j].Split(',');
 
             string[] temp5 = temp[5].Split('/');
             int[] temp5_int = new int[temp5.Length];
@@ -281,17 +294,19 @@ public class GameManager : MonoBehaviour
             GlobalDdataManager.QuestList.Add(q);
         }
 
-        sr = new StreamReader(path + "Party.CSV", Encoding.GetEncoding("euc-kr"));
-        while (!sr.EndOfStream)
+        _txtFile = (TextAsset)Resources.Load("Data/Party") as TextAsset;
+        s = _txtFile.text;
+        temp2 = s.Split('\n');
+
+        for (int j = 0; j < temp2.Length - 1; ++j)
         {
-            string s = sr.ReadLine();
-            string[] temp = s.Split(',');
+            string[] temp = temp2[j].Split(',');
 
             string[] temp3 = temp[3].Split('/');
             int[] temp3_int = new int[temp3.Length];
             for (int i = 0; i < temp3.Length; ++i)
                 temp3_int[i] = Int32.Parse(temp3[i]);
-            
+
             int[] temp4_int = new int[3];
 
             Party temp22 = new Party(0, "aa", 0, null, null);
@@ -300,32 +315,38 @@ public class GameManager : MonoBehaviour
             GlobalDdataManager.PartyList.Add(p);
         }
 
-        sr = new StreamReader(path + "Monster.CSV", Encoding.GetEncoding("euc-kr"));
-        while (!sr.EndOfStream)
+        _txtFile = (TextAsset)Resources.Load("Data/Monster") as TextAsset;
+        s = _txtFile.text;
+        temp2 = s.Split('\n');
+
+        for (int j = 0; j < temp2.Length - 1; ++j)
         {
-            string s = sr.ReadLine();
-            string[] temp = s.Split(',');
+            string[] temp = temp2[j].Split(',');
 
             Monster m = new Monster(Int32.Parse(temp[0]), temp[1], temp[2], temp[4], Int32.Parse(temp[3]));
             GlobalDdataManager.MonsterList.Add(m);
         }
 
-        sr = new StreamReader(path + "Item.CSV", Encoding.GetEncoding("euc-kr"));
-        while (!sr.EndOfStream)
+        _txtFile = (TextAsset)Resources.Load("Data/Item") as TextAsset;
+        s = _txtFile.text;
+        temp2 = s.Split('\n');
+
+        for (int j = 0; j < temp2.Length - 1; ++j)
         {
-            string s = sr.ReadLine();
-            string[] temp = s.Split(',');
+            string[] temp = temp2[j].Split(',');
 
             Item i = new Item(Int32.Parse(temp[0]), temp[1], temp[2], (ITEM_TYPE)Int32.Parse(temp[3])
                 , temp[4], temp[5]);
             GlobalDdataManager.ItemList.Add(i);
         }
 
-        sr = new StreamReader(path + "Hunter.CSV", Encoding.GetEncoding("euc-kr"));
-        while (!sr.EndOfStream)
+        _txtFile = (TextAsset)Resources.Load("Data/Hunter") as TextAsset;
+        s = _txtFile.text;
+        temp2 = s.Split('\n');
+
+        for (int j = 0; j < temp2.Length - 1; ++j)
         {
-            string s = sr.ReadLine();
-            string[] temp = s.Split(',');
+            string[] temp = temp2[j].Split(',');
 
             string[] temp6 = temp[6].Split('/');
             int[] temp6_int = new int[temp6.Length];
@@ -334,9 +355,9 @@ public class GameManager : MonoBehaviour
 
             int max = 0;
             int idx = 0;
-            for(int i = 0; i < temp6_int.Length; ++i)
+            for (int i = 0; i < temp6_int.Length; ++i)
             {
-                if(temp6_int[i] > max)
+                if (temp6_int[i] > max)
                 {
                     max = temp6_int[i];
                     idx = i;

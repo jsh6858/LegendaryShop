@@ -251,6 +251,7 @@ namespace LegendFramework
         public int No;
         public string Title;
         public int PeriodTime;
+        public int OriginTime;
 
         public int MyParty;
         public int MyMonster;
@@ -269,6 +270,7 @@ namespace LegendFramework
             No = _no;
             Title = _title;
             PeriodTime = _periodTime;
+            OriginTime = _periodTime;
 
             MyParty = _party;
             MyMonster = _monster;

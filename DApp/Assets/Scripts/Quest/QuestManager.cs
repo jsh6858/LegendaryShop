@@ -80,6 +80,9 @@ public class QuestManager : MonoBehaviour {
         _itemList[1].Set_ItemInfo(GlobalDdataManager.ItemList[normal[1]].Name);
         _itemList[1].Select_Item(true);
 
+        for (int i = 2; i < 5; ++i)
+            _itemList[i].Set_ItemInfo(GlobalDdataManager.ItemList[unique[i - 2]].Name);
+
         for (int i=5; i<8; ++i)
             _itemList[i].Set_ItemInfo(GlobalDdataManager.ItemList[unique[i-5]].Name, POWER_NEED[i-5]);
 

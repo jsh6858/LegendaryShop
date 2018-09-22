@@ -787,7 +787,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4449097520039486}
   - component: {fileID: 114506316332804496}
-  - component: {fileID: 114479490817370984}
   m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
@@ -6706,7 +6705,8 @@ MonoBehaviour:
     type: 2}
   HunterProgress: {fileID: 1689040871019508}
   hunterProgressBar: {fileID: 114956046823398112}
-  TrophyObj: {fileID: 0}
+  TrophyObj: {fileID: 114558592605769958}
+  grid: {fileID: 114628416811345236}
 --- !u!114 &114286440573346606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7968,22 +7968,6 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Button X
   mFillCenter: 1
---- !u!114 &114479490817370984
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1358240130556022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df9bfb5c080dac24cbbc6c9f595ed413, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frameIndex: 0
-  mFPS: 30
-  mPrefix: 
-  mLoop: 1
-  mSnap: 1
 --- !u!114 &114486597099925008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8898,7 +8882,9 @@ MonoBehaviour:
   - {fileID: 1839585222136184}
   uiTable: {fileID: 114973115525636108}
   button: {fileID: 1734686193346366}
-  tfc: {fileID: 114779247147833394}
+  questName: {fileID: 0}
+  monsterName: {fileID: 0}
+  monsterImg: {fileID: 0}
   testNum: 4
 --- !u!114 &114570570312145188
 MonoBehaviour:

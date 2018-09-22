@@ -22,6 +22,11 @@ public class HunterListManager : MonoBehaviour
         HunterProgress.SetActive(false);
     }
 
+    private void OnEnable()
+    {
+        Init();
+    }
+
     public void Init()
     {
         grid = this.GetComponent<UIGrid>();
@@ -30,8 +35,12 @@ public class HunterListManager : MonoBehaviour
         {
             questList = new List<HunterQuestState>();
         }
-        
-        for(int i = 0; i < GlobalDdataManager.QuestProgressList.Count; i++)
+
+        if(GlobalDdataManager.QuestProgressList.Count > 0)
+            HunterProgress.SetActive(true);
+
+
+        for (int i = 0; i < GlobalDdataManager.QuestProgressList.Count; i++)
         {
             if (GlobalDdataManager.QuestProgressList[i].PeriodTime > 0)
                 continue;
@@ -41,18 +50,7 @@ public class HunterListManager : MonoBehaviour
             AddOnClickEvent(this, temp.trophyCheckBtn, "ShowTrophy");
             questList.Add(temp);
         }
-
-        for (int i = GlobalDdataManager.QuestProgressList.Count - 1; i >= 0; i--)
-        {
-            if (GlobalDdataManager.QuestProgressList[i].PeriodTime <= 0)
-                continue;
-
-            isHaveHunting = true;
-            HunterQuestState temp = GameObject.Instantiate(listItemPrefab, this.transform).GetComponent<HunterQuestState>();
-            SettingQuestState(temp, i);
-            AddOnClickEvent(this, temp.trophyCheckBtn, "ShowTrophy");
-            questList.Add(temp);
-        }
+        
         currentNum = questList.Count;
 
         grid.Reposition();
@@ -76,6 +74,8 @@ public class HunterListManager : MonoBehaviour
 
     private void Update()
     {
+        return;
+
         for(int i = GlobalDdataManager.QuestProgressList.Count - 1; i >= 0; i--)
         {
             if(GlobalDdataManager.QuestProgressList[i].PeriodTime > 0)
@@ -94,7 +94,7 @@ public class HunterListManager : MonoBehaviour
         }
         else
         {
-            HunterProgress.SetActive(false);
+            //HunterProgress.SetActive(false);
         }
 
         if(GlobalDdataManager.QuestProgressList.Count != currentNum)
@@ -130,7 +130,7 @@ public class HunterListManager : MonoBehaviour
     {
         Quest q = GlobalDdataManager.QuestProgressList[index];
         Party p = GlobalDdataManager.PartyList[q.MyParty];
-        Monster m = GlobalDdataManager.MonsterList[q.MyMonster];
+        Monster m = GlobalDdataManager.MonsterList[q.MyMonster % GlobalDdataManager.MonsterList.Count];
 
         src.SetInfo(index, m.MonsterThumbImageId, p.PartyMembers, null, q.PeriodTime, q.PeriodTime);
     }

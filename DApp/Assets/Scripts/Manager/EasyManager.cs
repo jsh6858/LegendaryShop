@@ -45,7 +45,7 @@ public class EasyManager {
 
     public GameObject GetObj(string str)
     {
-        if (_dicObj[str] == null)
+        if (_dicObj.ContainsKey(str) == false || _dicObj[str] == null)
             _dicObj[str] = GameObject.Find(str);
 
         return _dicObj[str];
